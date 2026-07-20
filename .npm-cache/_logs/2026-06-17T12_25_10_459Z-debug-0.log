@@ -1,0 +1,76 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_global\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.11.1
+2 info using node@v22.15.0
+3 silly config load:file:C:\Program Files\nodejs\node_global\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\.npmrc
+5 silly config load:file:C:\Users\yan85\.npmrc
+6 silly config load:file:C:\Program Files\nodejs\node_global\etc\npmrc
+7 verbose title npm exec playwright install chromium
+8 verbose argv "exec" "--" "playwright" "install" "chromium"
+9 verbose logfile logs-max:10 dir:C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\.npm-cache\_logs\2026-06-17T12_25_10_459Z-
+10 verbose logfile C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\.npm-cache\_logs\2026-06-17T12_25_10_459Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 http fetch GET 200 https://registry.npmjs.org/npm 335ms
+14 http fetch GET 200 https://registry.npmjs.org/playwright 1079ms (cache updated)
+15 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+16 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+17 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+18 warn exec The following package was not found and will be installed: playwright@1.61.0
+19 silly idealTree buildDeps
+20 silly fetch manifest playwright@1.61.0
+21 silly packumentCache full:https://registry.npmjs.org/playwright cache-miss
+22 http fetch GET 200 https://registry.npmjs.org/playwright 494ms (cache updated)
+23 silly packumentCache full:https://registry.npmjs.org/playwright set size:undefined disposed:false
+24 silly placeDep ROOT playwright@1.61.0 REPLACE for:  want: 1.61.0
+25 silly fetch manifest playwright-core@1.61.0
+26 silly packumentCache full:https://registry.npmjs.org/playwright-core cache-miss
+27 http fetch GET 200 https://registry.npmjs.org/playwright-core 523ms (cache updated)
+28 silly packumentCache full:https://registry.npmjs.org/playwright-core set size:undefined disposed:false
+29 silly placeDep ROOT playwright-core@1.61.0 OK for: playwright@1.61.0 want: 1.61.0
+30 silly reify mark retired [
+30 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\playwright',
+30 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\playwright',
+30 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\playwright.cmd',
+30 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\playwright.ps1'
+30 silly reify ]
+31 silly reify mark retired [
+31 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\playwright-core',
+31 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\playwright-core',
+31 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\playwright-core.cmd',
+31 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\playwright-core.ps1'
+31 silly reify ]
+32 silly reify moves {
+32 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\playwright': 'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.playwright-NWbjdap0',
+32 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\playwright': 'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\.playwright-YHiBIPOp',
+32 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\playwright.cmd': 'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\.playwright.cmd-mNAPizh3',
+32 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\playwright.ps1': 'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\.playwright.ps1-QqJXHPl1',
+32 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\playwright-core': 'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.playwright-core-HL7YSm17',
+32 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\playwright-core': 'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\.playwright-core-cM1LOQAd',
+32 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\playwright-core.cmd': 'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\.playwright-core.cmd-fvNR94Bp',
+32 silly reify   'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\playwright-core.ps1': 'C:\\Users\\yan85\\OneDrive\\Documents\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\.npm-cache\\_npx\\e41f203b7505f1fb\\node_modules\\.bin\\.playwright-core.ps1-sqJo66fB'
+32 silly reify }
+33 silly audit bulk request {
+33 silly audit   fsevents: [ '2.3.2' ],
+33 silly audit   playwright: [ '1.61.0' ],
+33 silly audit   'playwright-core': [ '1.61.0' ]
+33 silly audit }
+34 http cache playwright-core@https://registry.npmjs.org/playwright-core/-/playwright-core-1.61.0.tgz 0ms (cache hit)
+35 silly tarball no local data for playwright-core@https://registry.npmjs.org/playwright-core/-/playwright-core-1.61.0.tgz. Extracting by manifest.
+36 http cache playwright@https://registry.npmjs.org/playwright/-/playwright-1.61.0.tgz 0ms (cache hit)
+37 silly tarball no local data for playwright@https://registry.npmjs.org/playwright/-/playwright-1.61.0.tgz. Extracting by manifest.
+38 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 433ms
+39 silly audit report {}
+40 http fetch GET 200 https://registry.npmjs.org/playwright-core/-/playwright-core-1.61.0.tgz 1059ms (cache miss)
+41 http fetch GET 200 https://registry.npmjs.org/playwright/-/playwright-1.61.0.tgz 1429ms (cache miss)
+42 verbose cwd C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy
+43 verbose os Windows_NT 10.0.26200
+44 verbose node v22.15.0
+45 verbose npm  v11.11.1
+46 notice
+46 notice New minor version of npm available! 11.11.1 -> 11.17.0
+46 notice Changelog: https://github.com/npm/cli/releases/tag/v11.17.0
+46 notice To update run: npm install -g npm@11.17.0
+46 notice  { force: true, [Symbol(proc-log.meta)]: true }
+47 verbose exit 0
+48 info ok

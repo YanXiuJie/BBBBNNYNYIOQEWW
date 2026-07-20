@@ -1,0 +1,1472 @@
+2026-06-15 21:51:45,506 [INFO] app.main: 日志系统配置成功
+2026-06-15 21:53:46,183 [INFO] app.main: Logging configured successfully
+2026-06-15 21:55:38,043 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 21:55:38,475 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 21:55:38,479 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:03:14,309 [INFO] httpx: HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-06-15 22:03:17,276 [INFO] httpx: HTTP Request: GET http://testserver/syllabus "HTTP/1.1 200 OK"
+2026-06-15 22:03:20,261 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:03:20,694 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:03:20,697 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:03:20,710 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-06-15 22:03:20,736 [INFO] httpx: HTTP Request: GET http://testserver/teacher/students "HTTP/1.1 200 OK"
+2026-06-15 22:03:20,818 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page_size=100 "HTTP/1.1 200 OK"
+2026-06-15 22:03:23,799 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:03:24,229 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:03:24,233 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:03:24,255 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=1&page_size=5&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-06-15 22:03:27,226 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:03:27,659 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:03:27,662 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:03:30,715 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:03:31,145 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:03:31,149 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:03:34,154 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:03:34,585 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:03:34,589 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:03:34,599 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:03:35,869 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:03:36,788 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:03:36,831 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-15 22:03:36,840 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:03:36,852 [INFO] app.main: Attempt submitted: student_id=2, question_id=43
+2026-06-15 22:03:36,880 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-15 22:03:36,883 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-15 22:03:39,856 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:03:40,286 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:03:40,289 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:03:40,300 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:03:41,204 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:03:42,113 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:03:42,147 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-15 22:03:42,154 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:03:42,163 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:03:43,069 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:03:43,100 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 3/4 x 3/5 = ?...
+2026-06-15 22:03:43,106 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:03:43,113 [INFO] app.main: Attempt submitted: student_id=2, question_id=43
+2026-06-15 22:03:43,146 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=43.5
+2026-06-15 22:03:43,149 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-15 22:03:43,156 [INFO] app.main: Attempt submitted: student_id=2, question_id=44
+2026-06-15 22:03:43,176 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=42.0
+2026-06-15 22:03:43,179 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-15 22:03:43,196 [INFO] httpx: HTTP Request: GET http://testserver/student/mistakes?page=1&page_size=1&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-06-15 22:03:46,156 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:03:46,586 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:03:46,589 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:03:46,598 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:03:47,532 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:03:48,481 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:03:48,514 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 3/5 = ?...
+2026-06-15 22:03:48,522 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:03:48,530 [INFO] app.main: Attempt submitted: student_id=2, question_id=43
+2026-06-15 22:03:48,560 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-15 22:03:48,564 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-15 22:03:48,574 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:03:49,479 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:03:49,510 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-15 22:03:49,515 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:03:52,506 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:03:52,938 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:03:52,941 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:03:52,950 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:03:53,862 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:03:54,790 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:03:54,809 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-15 22:03:54,816 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:03:54,825 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:03:55,761 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:03:55,798 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 3/4 x 3/5 = ?...
+2026-06-15 22:03:55,807 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:03:58,933 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:03:59,381 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:03:59,383 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:03:59,413 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic "HTTP/1.1 200 OK"
+2026-06-15 22:04:02,492 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:04:02,934 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:04:02,937 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:04:02,961 [INFO] httpx: HTTP Request: GET http://testserver/student/progress "HTTP/1.1 200 OK"
+2026-06-15 22:04:06,028 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:04:06,476 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:04:06,479 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:04:06,530 [INFO] httpx: HTTP Request: POST http://testserver/teacher/classes "HTTP/1.1 201 Created"
+2026-06-15 22:04:06,556 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-06-15 22:04:06,580 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-06-15 22:04:09,640 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:04:10,081 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:04:10,085 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:04:10,579 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-06-15 22:04:11,076 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-06-15 22:04:11,100 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-06-15 22:04:14,208 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:04:14,653 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:04:14,656 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:04:14,707 [INFO] httpx: HTTP Request: POST http://testserver/teacher/chapters "HTTP/1.1 201 Created"
+2026-06-15 22:04:14,736 [INFO] httpx: HTTP Request: POST http://testserver/teacher/subtopics "HTTP/1.1 201 Created"
+2026-06-15 22:04:14,761 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/subtopics/49 "HTTP/1.1 200 OK"
+2026-06-15 22:04:14,788 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/chapters/9 "HTTP/1.1 200 OK"
+2026-06-15 22:04:17,788 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:04:18,221 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:04:18,225 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:04:18,235 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-15 22:04:19,180 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:19,208 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/4 x 2/5 = ?...
+2026-06-15 22:04:19,214 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-15 22:04:22,202 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:04:22,636 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:04:22,640 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:04:22,649 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-15 22:04:23,576 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:23,598 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 3/5 = ?...
+2026-06-15 22:04:23,604 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-15 22:04:26,581 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:04:27,014 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:04:27,017 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:04:27,025 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-15 22:04:27,929 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:27,970 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-15 22:04:27,975 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-15 22:04:27,987 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-15 22:04:28,895 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:28,932 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 1/4 x 3/5 = ?...
+2026-06-15 22:04:28,937 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-15 22:04:31,916 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:04:32,352 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:04:32,355 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:04:32,364 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-15 22:04:33,300 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:33,356 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-15 22:04:33,362 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-15 22:04:33,369 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-15 22:04:33,393 [INFO] app.main: Question generated successfully: id=44, prompt=Soalan unik selepas semakan pendua....
+2026-06-15 22:04:33,398 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-15 22:04:36,371 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:04:36,802 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:04:36,806 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:04:36,830 [INFO] httpx: HTTP Request: GET http://testserver/teacher/analytics/classes/1 "HTTP/1.1 200 OK"
+2026-06-15 22:04:37,703 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:38,597 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:39,478 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:40,397 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:41,244 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:42,135 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:42,996 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:43,974 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:44,890 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:45,777 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:46,636 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:04:47,525 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:07:12,130 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:08:30,399 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:08:30,837 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:08:30,841 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:08:30,852 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:08:32,099 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:08:33,033 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:08:33,058 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-15 22:08:33,067 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:08:33,076 [INFO] app.main: Attempt submitted: student_id=2, question_id=43
+2026-06-15 22:08:33,106 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-15 22:08:33,109 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-15 22:17:39,255 [INFO] httpx: HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-06-15 22:17:42,205 [INFO] httpx: HTTP Request: GET http://testserver/syllabus "HTTP/1.1 200 OK"
+2026-06-15 22:17:45,173 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:17:45,614 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:17:45,617 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:17:45,629 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-06-15 22:17:45,651 [INFO] httpx: HTTP Request: GET http://testserver/teacher/students "HTTP/1.1 200 OK"
+2026-06-15 22:17:45,721 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page_size=100 "HTTP/1.1 200 OK"
+2026-06-15 22:17:48,722 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:17:49,158 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:17:49,162 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:17:49,186 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=1&page_size=5&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-06-15 22:17:52,145 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:17:52,576 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:17:52,580 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:17:55,656 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:17:56,089 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:17:56,093 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:17:59,081 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:17:59,517 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:17:59,521 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:17:59,530 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:18:00,757 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:01,643 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:01,679 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-15 22:18:01,689 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:18:01,698 [INFO] app.main: Attempt submitted: student_id=2, question_id=43
+2026-06-15 22:18:01,729 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-15 22:18:01,732 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-15 22:18:04,687 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:18:05,121 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:18:05,124 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:18:05,135 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:18:06,082 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:06,996 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:07,030 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-15 22:18:07,038 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:18:07,048 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:18:07,958 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:07,975 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 3/4 x 3/5 = ?...
+2026-06-15 22:18:07,980 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:18:07,987 [INFO] app.main: Attempt submitted: student_id=2, question_id=43
+2026-06-15 22:18:08,019 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=43.5
+2026-06-15 22:18:08,023 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-15 22:18:08,029 [INFO] app.main: Attempt submitted: student_id=2, question_id=44
+2026-06-15 22:18:08,051 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=42.0
+2026-06-15 22:18:08,055 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-15 22:18:08,070 [INFO] httpx: HTTP Request: GET http://testserver/student/mistakes?page=1&page_size=1&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-06-15 22:18:11,044 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:18:11,480 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:18:11,483 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:18:11,492 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:18:12,395 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:13,280 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:13,325 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 3/5 = ?...
+2026-06-15 22:18:13,333 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:18:13,340 [INFO] app.main: Attempt submitted: student_id=2, question_id=43
+2026-06-15 22:18:13,372 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-15 22:18:13,376 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-15 22:18:13,384 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:18:14,359 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:14,401 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-15 22:18:14,407 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:18:17,387 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:18:17,827 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:18:17,831 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:18:17,839 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:18:18,761 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:19,682 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:19,704 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-15 22:18:19,712 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:18:19,721 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-15 22:18:20,641 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:20,683 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 3/4 x 3/5 = ?...
+2026-06-15 22:18:20,690 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-15 22:18:23,671 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:18:24,110 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:18:24,114 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:18:24,138 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic "HTTP/1.1 200 OK"
+2026-06-15 22:18:27,147 [INFO] app.main: Login attempt: username=amin
+2026-06-15 22:18:27,580 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-15 22:18:27,583 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:18:27,615 [INFO] httpx: HTTP Request: GET http://testserver/student/progress "HTTP/1.1 200 OK"
+2026-06-15 22:18:30,621 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:18:31,055 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:18:31,058 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:18:31,085 [INFO] httpx: HTTP Request: POST http://testserver/teacher/classes "HTTP/1.1 201 Created"
+2026-06-15 22:18:31,112 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-06-15 22:18:31,137 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-06-15 22:18:34,130 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:18:34,563 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:18:34,567 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:18:35,030 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-06-15 22:18:35,485 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-06-15 22:18:35,509 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-06-15 22:18:38,474 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:18:38,904 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:18:38,908 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:18:38,953 [INFO] httpx: HTTP Request: POST http://testserver/teacher/chapters "HTTP/1.1 201 Created"
+2026-06-15 22:18:38,981 [INFO] httpx: HTTP Request: POST http://testserver/teacher/subtopics "HTTP/1.1 201 Created"
+2026-06-15 22:18:39,007 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/subtopics/49 "HTTP/1.1 200 OK"
+2026-06-15 22:18:39,035 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/chapters/9 "HTTP/1.1 200 OK"
+2026-06-15 22:18:42,008 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:18:42,448 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:18:42,452 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:18:42,463 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-15 22:18:43,370 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:43,391 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/4 x 2/5 = ?...
+2026-06-15 22:18:43,397 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-15 22:18:46,381 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:18:46,812 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:18:46,816 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:18:46,825 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-15 22:18:47,720 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:47,755 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 3/5 = ?...
+2026-06-15 22:18:47,761 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-15 22:18:50,730 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:18:51,161 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:18:51,164 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:18:51,174 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-15 22:18:52,084 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:52,129 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-15 22:18:52,135 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-15 22:18:52,146 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-15 22:18:53,076 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:53,093 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 1/4 x 3/5 = ?...
+2026-06-15 22:18:53,098 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-15 22:18:56,049 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:18:56,481 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:18:56,485 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:18:56,493 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-15 22:18:57,366 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:18:57,412 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-15 22:18:57,418 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-15 22:18:57,425 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-15 22:18:57,448 [INFO] app.main: Question generated successfully: id=44, prompt=Soalan unik selepas semakan pendua....
+2026-06-15 22:18:57,453 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-15 22:19:00,401 [INFO] app.main: Login attempt: username=cikgu
+2026-06-15 22:19:00,831 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-15 22:19:00,835 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-15 22:19:00,861 [INFO] httpx: HTTP Request: GET http://testserver/teacher/analytics/classes/1 "HTTP/1.1 200 OK"
+2026-06-15 22:19:01,772 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:19:02,697 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:19:03,621 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:19:04,523 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:19:05,430 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:19:06,328 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:19:07,249 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:19:08,178 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:19:09,096 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:19:09,968 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:19:10,864 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-15 22:19:11,819 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-06-16 08:03:05,737 [INFO] app.main: Login attempt: username=cikgu
+2026-06-16 08:04:49,204 [INFO] app.main: Login attempt: username=cikgu
+2026-06-16 08:04:49,653 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-16 08:04:49,658 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-16 08:04:49,672 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-16 08:04:49,696 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 3/5 = ?...
+2026-06-16 08:04:49,703 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-16 08:04:49,712 [INFO] app.main: Generating question: subtopic_id=42, difficulty=medium, type=multiple_choice
+2026-06-16 08:04:49,730 [INFO] app.main: Question generated successfully: id=44, prompt=Titik A berada pada (1, 2) dan titik B pada (6, 2)...
+2026-06-16 08:04:49,737 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-16 08:05:22,388 [INFO] app.main: Login attempt: username=cikgu
+2026-06-16 08:05:22,839 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-16 08:05:22,845 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-16 08:05:22,860 [INFO] app.main: Generating question: subtopic_id=43, difficulty=medium, type=multiple_choice
+2026-06-16 08:05:22,861 [WARNING] app.main: LLM generation failed (attempt 1/3): Invalid literal for Fraction: '1:2'
+2026-06-16 08:05:22,862 [WARNING] app.main: LLM generation failed (attempt 2/3): Invalid literal for Fraction: '1:2'
+2026-06-16 08:05:22,863 [WARNING] app.main: LLM generation failed (attempt 3/3): Invalid literal for Fraction: '1:2'
+2026-06-16 08:05:22,864 [ERROR] app.main: Failed to generate question after 3 LLM attempts and 0 duplicate checks
+2026-06-16 08:05:22,870 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 503 Service Unavailable"
+2026-06-16 08:05:22,881 [INFO] app.main: Generating question: subtopic_id=44, difficulty=medium, type=multiple_choice
+2026-06-16 08:05:22,903 [INFO] app.main: Question generated successfully: id=43, prompt=Jika 4 buku berharga RM20, berapakah harga 1 buku?...
+2026-06-16 08:05:22,910 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-16 08:05:22,918 [INFO] app.main: Generating question: subtopic_id=45, difficulty=medium, type=multiple_choice
+2026-06-16 08:05:22,933 [INFO] app.main: Question generated successfully: id=44, prompt=3 hari bersamaan berapa jam jika ditambah 1 hari 4...
+2026-06-16 08:05:22,938 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 10:06:24,481 [INFO] httpx: HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-06-17 10:06:27,556 [INFO] httpx: HTTP Request: GET http://testserver/syllabus "HTTP/1.1 200 OK"
+2026-06-17 10:06:30,631 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 10:06:31,070 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 10:06:31,075 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:06:31,088 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-06-17 10:06:31,110 [INFO] httpx: HTTP Request: GET http://testserver/teacher/students "HTTP/1.1 200 OK"
+2026-06-17 10:06:31,184 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page_size=100 "HTTP/1.1 200 OK"
+2026-06-17 10:06:34,279 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 10:06:34,719 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 10:06:34,722 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:06:34,745 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=1&page_size=5&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-06-17 10:06:37,891 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 10:06:38,331 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 10:06:38,335 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:06:41,427 [INFO] app.main: Login attempt: username=amin
+2026-06-17 10:06:41,866 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 10:06:41,870 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:06:44,914 [INFO] app.main: Login attempt: username=amin
+2026-06-17 10:06:45,352 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 10:06:45,356 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:06:45,367 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 10:06:45,414 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-17 10:06:45,429 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 10:06:45,437 [INFO] app.main: Attempt submitted: student_id=2, question_id=43
+2026-06-17 10:06:45,467 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-17 10:06:45,470 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-17 10:06:48,523 [INFO] app.main: Login attempt: username=amin
+2026-06-17 10:06:48,958 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 10:06:48,962 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:06:48,972 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 10:06:49,007 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-17 10:06:49,015 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 10:06:49,024 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 10:06:49,040 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 3/4 x 3/5 = ?...
+2026-06-17 10:06:49,046 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 10:06:49,053 [INFO] app.main: Attempt submitted: student_id=2, question_id=43
+2026-06-17 10:06:49,082 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=43.5
+2026-06-17 10:06:49,086 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-17 10:06:49,094 [INFO] app.main: Attempt submitted: student_id=2, question_id=44
+2026-06-17 10:06:49,114 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=42.0
+2026-06-17 10:06:49,118 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-17 10:06:49,133 [INFO] httpx: HTTP Request: GET http://testserver/student/mistakes?page=1&page_size=1&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-06-17 10:06:52,237 [INFO] app.main: Login attempt: username=amin
+2026-06-17 10:06:52,673 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 10:06:52,676 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:06:52,685 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 10:06:52,721 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 3/5 = ?...
+2026-06-17 10:06:52,734 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 10:06:52,742 [INFO] app.main: Attempt submitted: student_id=2, question_id=43
+2026-06-17 10:06:52,772 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-17 10:06:52,775 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-17 10:06:52,784 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 10:06:52,801 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-17 10:06:52,806 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 10:06:55,883 [INFO] app.main: Login attempt: username=amin
+2026-06-17 10:06:56,323 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 10:06:56,327 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:06:56,336 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 10:06:56,372 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-17 10:06:56,381 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 10:06:56,389 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 10:06:56,406 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 3/4 x 3/5 = ?...
+2026-06-17 10:06:56,412 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 10:06:59,497 [INFO] app.main: Login attempt: username=amin
+2026-06-17 10:06:59,934 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 10:06:59,937 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:06:59,964 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic "HTTP/1.1 200 OK"
+2026-06-17 10:07:03,025 [INFO] app.main: Login attempt: username=amin
+2026-06-17 10:07:03,461 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 10:07:03,464 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:07:03,489 [INFO] httpx: HTTP Request: GET http://testserver/student/progress "HTTP/1.1 200 OK"
+2026-06-17 10:07:06,563 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 10:07:07,001 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 10:07:07,005 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:07:07,046 [INFO] httpx: HTTP Request: POST http://testserver/teacher/classes "HTTP/1.1 201 Created"
+2026-06-17 10:07:07,071 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-06-17 10:07:07,095 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-06-17 10:07:10,163 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 10:07:10,603 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 10:07:10,606 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:07:11,089 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-06-17 10:07:11,561 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-06-17 10:07:11,587 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-06-17 10:07:14,649 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 10:07:15,086 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 10:07:15,090 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:07:15,117 [INFO] httpx: HTTP Request: POST http://testserver/teacher/chapters "HTTP/1.1 201 Created"
+2026-06-17 10:07:15,144 [INFO] httpx: HTTP Request: POST http://testserver/teacher/subtopics "HTTP/1.1 201 Created"
+2026-06-17 10:07:15,169 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/subtopics/49 "HTTP/1.1 200 OK"
+2026-06-17 10:07:15,200 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/chapters/9 "HTTP/1.1 200 OK"
+2026-06-17 10:07:18,304 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 10:07:18,742 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 10:07:18,745 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:07:18,756 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-17 10:07:18,784 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/4 x 2/5 = ?...
+2026-06-17 10:07:18,790 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 10:07:21,854 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 10:07:22,292 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 10:07:22,295 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:07:22,305 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-17 10:07:22,340 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 3/5 = ?...
+2026-06-17 10:07:22,346 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 10:07:25,414 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 10:07:25,855 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 10:07:25,859 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:07:25,868 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-17 10:07:25,904 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-17 10:07:25,911 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 10:07:25,919 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-17 10:07:25,934 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 1/4 x 3/5 = ?...
+2026-06-17 10:07:25,939 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 10:07:28,997 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 10:07:29,436 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 10:07:29,439 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:07:29,448 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-17 10:07:29,485 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-17 10:07:29,491 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 10:07:29,500 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-17 10:07:29,525 [INFO] app.main: Question generated successfully: id=44, prompt=Soalan unik selepas semakan pendua....
+2026-06-17 10:07:29,529 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 10:07:32,565 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 10:07:33,000 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 10:07:33,004 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:07:33,030 [INFO] httpx: HTTP Request: GET http://testserver/teacher/analytics/classes/1 "HTTP/1.1 200 OK"
+2026-06-17 10:16:41,314 [INFO] app.main: Login attempt: username=amin
+2026-06-17 10:16:41,767 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 10:16:41,772 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:16:41,821 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-17 10:16:41,857 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 400 Bad Request"
+2026-06-17 10:55:44,469 [INFO] app.main: Login attempt: username=amin
+2026-06-17 10:55:44,913 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 10:55:44,918 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 10:55:44,959 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-17 10:55:44,997 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 400 Bad Request"
+2026-06-17 11:00:06,711 [INFO] httpx: HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-06-17 11:00:09,098 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:09,599 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:09,605 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:09,651 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-17 11:00:09,691 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 400 Bad Request"
+2026-06-17 11:00:10,018 [INFO] httpx: HTTP Request: GET http://testserver/syllabus "HTTP/1.1 200 OK"
+2026-06-17 11:00:12,749 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:13,069 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:00:13,186 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:13,189 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:13,234 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-17 11:00:13,255 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 400 Bad Request"
+2026-06-17 11:00:13,522 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:00:13,525 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:13,538 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-06-17 11:00:13,564 [INFO] httpx: HTTP Request: GET http://testserver/teacher/students "HTTP/1.1 200 OK"
+2026-06-17 11:00:13,670 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page_size=100 "HTTP/1.1 200 OK"
+2026-06-17 11:00:16,325 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:16,764 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:16,768 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:16,776 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:00:16,803 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-17 11:00:16,829 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 400 Bad Request"
+2026-06-17 11:00:17,216 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:00:17,219 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:17,243 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=1&page_size=5&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-06-17 11:00:19,873 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:20,319 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:20,322 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:20,357 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-17 11:00:20,383 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 400 Bad Request"
+2026-06-17 11:00:20,494 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:00:20,935 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:00:20,938 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:23,452 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:23,887 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:23,890 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:23,927 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-17 11:00:23,954 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 400 Bad Request"
+2026-06-17 11:00:24,058 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:24,496 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:24,499 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:27,008 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:27,456 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:27,459 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:27,499 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-17 11:00:27,522 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 400 Bad Request"
+2026-06-17 11:00:27,680 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:28,124 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:28,128 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:28,138 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 11:00:28,160 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-17 11:00:28,177 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 11:00:28,186 [INFO] app.main: Attempt submitted: student_id=2, question_id=43
+2026-06-17 11:00:28,216 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-17 11:00:28,219 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-17 11:00:30,751 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:31,195 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:31,199 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:31,236 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-17 11:00:31,260 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 400 Bad Request"
+2026-06-17 11:00:31,333 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:31,774 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:31,777 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:31,786 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 11:00:31,808 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-17 11:00:31,817 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 11:00:31,827 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 11:00:31,846 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 3/4 x 3/5 = ?...
+2026-06-17 11:00:31,852 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 11:00:31,859 [INFO] app.main: Attempt submitted: student_id=2, question_id=43
+2026-06-17 11:00:31,886 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=43.5
+2026-06-17 11:00:31,890 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-17 11:00:31,897 [INFO] app.main: Attempt submitted: student_id=2, question_id=44
+2026-06-17 11:00:31,917 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=42.0
+2026-06-17 11:00:31,920 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-17 11:00:31,937 [INFO] httpx: HTTP Request: GET http://testserver/student/mistakes?page=1&page_size=1&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-06-17 11:00:34,337 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:34,781 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:34,785 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:34,820 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-17 11:00:34,844 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 400 Bad Request"
+2026-06-17 11:00:35,075 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:35,520 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:35,523 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:35,535 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 11:00:35,556 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 3/5 = ?...
+2026-06-17 11:00:35,566 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 11:00:35,574 [INFO] app.main: Attempt submitted: student_id=2, question_id=43
+2026-06-17 11:00:35,601 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-17 11:00:35,604 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-17 11:00:35,612 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 11:00:35,627 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-17 11:00:35,633 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 11:00:37,950 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:38,386 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:38,390 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:38,423 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-17 11:00:38,452 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 400 Bad Request"
+2026-06-17 11:00:38,893 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:39,332 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:39,336 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:39,345 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 11:00:39,371 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-17 11:00:39,381 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 11:00:39,389 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 11:00:39,407 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 3/4 x 3/5 = ?...
+2026-06-17 11:00:39,414 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 11:00:41,550 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:41,987 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:41,991 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:42,023 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-17 11:00:42,050 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 400 Bad Request"
+2026-06-17 11:00:42,538 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:42,974 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:42,977 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:43,002 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic "HTTP/1.1 200 OK"
+2026-06-17 11:00:46,034 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:00:46,468 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:00:46,472 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:46,497 [INFO] httpx: HTTP Request: GET http://testserver/student/progress "HTTP/1.1 200 OK"
+2026-06-17 11:00:49,593 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:00:50,027 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:00:50,030 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:50,057 [INFO] httpx: HTTP Request: POST http://testserver/teacher/classes "HTTP/1.1 201 Created"
+2026-06-17 11:00:50,082 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-06-17 11:00:50,106 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-06-17 11:00:53,135 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:00:53,568 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:00:53,571 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:54,031 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-06-17 11:00:54,486 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-06-17 11:00:54,513 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-06-17 11:00:57,566 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:00:58,000 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:00:58,004 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:00:58,051 [INFO] httpx: HTTP Request: POST http://testserver/teacher/chapters "HTTP/1.1 201 Created"
+2026-06-17 11:00:58,083 [INFO] httpx: HTTP Request: POST http://testserver/teacher/subtopics "HTTP/1.1 201 Created"
+2026-06-17 11:00:58,109 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/subtopics/49 "HTTP/1.1 200 OK"
+2026-06-17 11:00:58,136 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/chapters/9 "HTTP/1.1 200 OK"
+2026-06-17 11:01:01,180 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:01:01,611 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:01:01,615 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:01:01,626 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-17 11:01:01,663 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/4 x 2/5 = ?...
+2026-06-17 11:01:01,669 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 11:01:04,689 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:01:05,120 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:01:05,124 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:01:05,133 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-17 11:01:05,171 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 3/5 = ?...
+2026-06-17 11:01:05,178 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 11:01:08,210 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:01:08,644 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:01:08,648 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:01:08,656 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-17 11:01:08,674 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-17 11:01:08,681 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 11:01:08,690 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-17 11:01:08,705 [INFO] app.main: Question generated successfully: id=44, prompt=Darabkan pecahan berikut: 1/4 x 3/5 = ?...
+2026-06-17 11:01:08,711 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 11:01:11,742 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:01:12,177 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:01:12,180 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:01:12,189 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-17 11:01:12,209 [INFO] app.main: Question generated successfully: id=43, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-17 11:01:12,215 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 11:01:12,223 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-17 11:01:12,250 [INFO] app.main: Question generated successfully: id=44, prompt=Soalan unik selepas semakan pendua....
+2026-06-17 11:01:12,255 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 11:01:15,282 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:01:15,712 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:01:15,715 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:01:15,739 [INFO] httpx: HTTP Request: GET http://testserver/teacher/analytics/classes/1 "HTTP/1.1 200 OK"
+2026-06-17 11:29:11,947 [INFO] httpx: HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-06-17 11:29:16,041 [INFO] httpx: HTTP Request: GET http://testserver/syllabus "HTTP/1.1 200 OK"
+2026-06-17 11:29:19,929 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:29:20,388 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:29:20,392 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:29:20,406 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-06-17 11:29:20,532 [INFO] httpx: HTTP Request: GET http://testserver/teacher/students "HTTP/1.1 200 OK"
+2026-06-17 11:29:20,700 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page_size=100 "HTTP/1.1 200 OK"
+2026-06-17 11:29:24,779 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:29:25,230 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:29:25,236 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:29:25,271 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=1&page_size=5&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-06-17 11:29:29,188 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:29:29,645 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:29:29,650 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:29:33,465 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:29:33,918 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:29:33,922 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:29:37,487 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:29:37,944 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:29:37,948 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:29:37,960 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 11:29:37,988 [INFO] app.main: Question generated successfully: id=289, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-17 11:29:38,002 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 11:29:38,013 [INFO] app.main: Attempt submitted: student_id=2, question_id=289
+2026-06-17 11:29:38,043 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-17 11:29:38,046 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-17 11:29:41,804 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:29:42,259 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:29:42,262 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:29:42,271 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 11:29:42,333 [INFO] app.main: Question generated successfully: id=289, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-17 11:29:42,344 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 11:29:42,354 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 11:29:42,371 [INFO] app.main: Question generated successfully: id=290, prompt=Darabkan pecahan berikut: 3/4 x 3/5 = ?...
+2026-06-17 11:29:42,378 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 11:29:42,385 [INFO] app.main: Attempt submitted: student_id=2, question_id=289
+2026-06-17 11:29:42,415 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=43.5
+2026-06-17 11:29:42,419 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-17 11:29:42,426 [INFO] app.main: Attempt submitted: student_id=2, question_id=290
+2026-06-17 11:29:42,451 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=42.0
+2026-06-17 11:29:42,454 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-17 11:29:42,474 [INFO] httpx: HTTP Request: GET http://testserver/student/mistakes?page=1&page_size=1&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-06-17 11:29:46,137 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:29:46,585 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:29:46,589 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:29:46,599 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 11:29:46,625 [INFO] app.main: Question generated successfully: id=289, prompt=Darabkan pecahan berikut: 1/2 x 3/5 = ?...
+2026-06-17 11:29:46,636 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 11:29:46,643 [INFO] app.main: Attempt submitted: student_id=2, question_id=289
+2026-06-17 11:29:46,676 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-17 11:29:46,679 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-17 11:29:46,689 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 11:29:46,705 [INFO] app.main: Question generated successfully: id=290, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-17 11:29:46,711 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 11:29:50,352 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:29:50,812 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:29:50,818 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:29:50,835 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 11:29:50,888 [INFO] app.main: Question generated successfully: id=289, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-17 11:29:50,906 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 11:29:50,918 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-17 11:29:50,937 [INFO] app.main: Question generated successfully: id=290, prompt=Darabkan pecahan berikut: 3/4 x 3/5 = ?...
+2026-06-17 11:29:50,944 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-17 11:29:54,493 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:29:54,943 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:29:54,946 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:29:54,977 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic "HTTP/1.1 200 OK"
+2026-06-17 11:29:58,735 [INFO] app.main: Login attempt: username=amin
+2026-06-17 11:29:59,188 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 11:29:59,192 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:29:59,222 [INFO] httpx: HTTP Request: GET http://testserver/student/progress "HTTP/1.1 200 OK"
+2026-06-17 11:30:02,923 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:30:03,378 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:30:03,382 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:30:03,412 [INFO] httpx: HTTP Request: POST http://testserver/teacher/classes "HTTP/1.1 201 Created"
+2026-06-17 11:30:03,440 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-06-17 11:30:03,474 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-06-17 11:30:07,232 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:30:07,686 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:30:07,689 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:30:08,221 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-06-17 11:30:08,714 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-06-17 11:30:08,741 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-06-17 11:30:12,386 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:30:12,826 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:30:12,829 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:30:12,860 [INFO] httpx: HTTP Request: POST http://testserver/teacher/chapters "HTTP/1.1 201 Created"
+2026-06-17 11:30:12,887 [INFO] httpx: HTTP Request: POST http://testserver/teacher/subtopics "HTTP/1.1 201 Created"
+2026-06-17 11:30:12,913 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/subtopics/49 "HTTP/1.1 200 OK"
+2026-06-17 11:30:12,940 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/chapters/9 "HTTP/1.1 200 OK"
+2026-06-17 11:30:16,484 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:30:16,926 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:30:16,929 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:30:16,940 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-17 11:30:16,967 [INFO] app.main: Question generated successfully: id=289, prompt=Darabkan pecahan berikut: 1/4 x 2/5 = ?...
+2026-06-17 11:30:16,974 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 11:30:20,541 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:30:21,004 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:30:21,007 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:30:21,017 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-17 11:30:21,038 [INFO] app.main: Question generated successfully: id=289, prompt=Darabkan pecahan berikut: 1/2 x 3/5 = ?...
+2026-06-17 11:30:21,046 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 11:30:24,617 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:30:25,062 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:30:25,065 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:30:25,073 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-17 11:30:25,111 [INFO] app.main: Question generated successfully: id=289, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-17 11:30:25,116 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 11:30:25,123 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-17 11:30:25,139 [INFO] app.main: Question generated successfully: id=290, prompt=Darabkan pecahan berikut: 1/4 x 3/5 = ?...
+2026-06-17 11:30:25,144 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 11:30:28,850 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:30:29,299 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:30:29,302 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:30:29,314 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-17 11:30:29,346 [INFO] app.main: Question generated successfully: id=289, prompt=Darabkan pecahan berikut: 1/2 x 2/5 = ?...
+2026-06-17 11:30:29,357 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 11:30:29,369 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-17 11:30:29,410 [INFO] app.main: Question generated successfully: id=290, prompt=Soalan unik selepas semakan pendua....
+2026-06-17 11:30:29,416 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-17 11:30:33,422 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 11:30:33,864 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 11:30:33,867 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 11:30:33,902 [INFO] httpx: HTTP Request: GET http://testserver/teacher/analytics/classes/1 "HTTP/1.1 200 OK"
+2026-06-17 15:28:32,033 [INFO] app.main: Login attempt: username=amin
+2026-06-17 15:28:32,474 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 15:28:32,479 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 15:28:32,578 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-17 15:28:32,634 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 15:28:32,675 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 15:28:32,711 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 15:28:32,744 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 15:28:32,782 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 15:28:32,814 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 15:28:32,851 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 15:28:32,882 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 15:28:32,916 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 15:28:32,949 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 15:28:32,990 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 15:28:33,020 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 15:28:33,055 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 15:28:33,088 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 15:28:33,120 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 15:28:33,150 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 15:28:33,191 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 15:28:33,229 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 15:28:33,268 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 15:28:33,298 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 15:28:33,330 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 15:28:33,376 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 15:28:33,397 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 400 Bad Request"
+2026-06-17 16:49:24,892 [INFO] app.main: Login attempt: username=amin
+2026-06-17 16:49:25,330 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 16:49:25,334 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 16:49:25,400 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-17 16:49:25,454 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 16:49:25,498 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 16:49:25,536 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 16:49:25,568 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 16:49:25,600 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 16:49:25,631 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 16:49:25,663 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 16:49:25,693 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 16:49:25,726 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 16:49:25,759 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 16:49:25,798 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 16:49:25,828 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 16:49:25,865 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 16:49:25,895 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 16:49:25,931 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 16:49:25,962 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 16:49:25,994 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 16:49:26,024 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 16:49:26,061 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-17 16:49:26,092 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-06-17 16:49:26,111 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 400 Bad Request"
+2026-06-17 17:06:14,745 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 17:06:15,197 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 17:06:15,204 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-17 17:06:15,217 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-06-17 17:06:15,250 [INFO] httpx: HTTP Request: GET http://testserver/teacher/students "HTTP/1.1 200 OK"
+2026-06-17 17:06:15,439 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page_size=100 "HTTP/1.1 200 OK"
+2026-06-17 17:30:23,756 [INFO] app.main: Login attempt: username=amin
+2026-06-17 17:30:24,200 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 17:30:25,988 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 17:30:26,460 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 17:30:27,630 [INFO] app.main: Login attempt: username=amin
+2026-06-17 17:30:28,075 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-17 20:29:26,162 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 20:29:26,675 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 20:30:23,674 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 20:30:24,129 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 20:31:10,778 [INFO] app.main: Login attempt: username=freshstudent423518
+2026-06-17 20:31:11,211 [INFO] app.main: Login successful: user_id=7, role=student, username=freshstudent423518
+2026-06-17 20:31:13,261 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-17 20:31:13,287 [INFO] app.main: Question generated successfully: id=289, prompt=Darabkan pecahan berikut: 1/2 x 3/5 = ?...
+2026-06-17 20:31:13,300 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-17 20:31:13,320 [INFO] app.main: Question generated successfully: id=290, prompt=Darabkan pecahan berikut: 3/4 x 2/5 = ?...
+2026-06-17 20:31:15,351 [INFO] app.main: Attempt submitted: student_id=7, question_id=290
+2026-06-17 20:31:15,378 [INFO] app.main: Attempt recorded: student_id=7, is_correct=False, mastery_score=47.0
+2026-06-17 21:05:00,530 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:05:01,010 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-17 21:05:05,527 [INFO] app.main: Login attempt: username=diagstudent499501
+2026-06-17 21:05:05,998 [INFO] app.main: Login successful: user_id=8, role=student, username=diagstudent499501
+2026-06-17 21:08:46,144 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:08:46,593 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:08:51,290 [INFO] app.main: Login attempt: username=diagstudent725105
+2026-06-17 21:08:51,294 [WARNING] app.main: Login failed: username=diagstudent725105
+2026-06-17 21:10:05,430 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:10:05,881 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:10:06,876 [INFO] app.main: Login attempt: username=smokediag492233
+2026-06-17 21:10:06,879 [WARNING] app.main: Login failed: username=smokediag492233
+2026-06-17 21:10:28,645 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:10:29,104 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:11:31,502 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:11:31,959 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:12:08,660 [INFO] app.main: Login attempt: username=amin
+2026-06-17 21:12:08,739 [INFO] app.main: Login attempt: username=amin
+2026-06-17 21:12:09,133 [INFO] app.main: Login successful: user_id=8, role=student, username=amin
+2026-06-17 21:12:09,209 [INFO] app.main: Login successful: user_id=8, role=student, username=amin
+2026-06-17 21:12:34,013 [INFO] app.main: Login attempt: username=amin
+2026-06-17 21:12:34,480 [INFO] app.main: Login successful: user_id=8, role=student, username=amin
+2026-06-17 21:21:31,144 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:21:31,600 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:23:55,869 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:23:56,333 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:27:27,341 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:27:27,782 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:27:28,265 [INFO] app.main: Login attempt: username=diag_qtlocn
+2026-06-17 21:27:28,714 [INFO] app.main: Login successful: user_id=17, role=student, username=diag_qtlocn
+2026-06-17 21:28:25,339 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:28:25,779 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:33:17,671 [INFO] app.main: Login attempt: username=diag_qtlocn
+2026-06-17 21:33:17,680 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:33:18,172 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:33:18,175 [INFO] app.main: Login successful: user_id=17, role=student, username=diag_qtlocn
+2026-06-17 21:33:18,695 [INFO] app.main: Login attempt: username=diag_sxdfta
+2026-06-17 21:33:19,144 [INFO] app.main: Login successful: user_id=18, role=student, username=diag_sxdfta
+2026-06-17 21:44:59,357 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:44:59,804 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:45:49,861 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:45:50,312 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:46:37,005 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:46:37,445 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:47:38,401 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:47:38,903 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:49:31,117 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:49:31,572 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:54:55,082 [INFO] app.main: Login attempt: username=cikgu
+2026-06-17 21:54:55,533 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-17 21:54:58,825 [INFO] app.main: Login attempt: username=ui_diag_493802
+2026-06-17 21:54:59,309 [INFO] app.main: Login successful: user_id=23, role=student, username=ui_diag_493802
+2026-06-29 14:10:54,444 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:10:57,351 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:11:00,120 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:11:03,308 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:11:06,573 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:15:40,197 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:15:49,410 [INFO] httpx: HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-06-29 14:15:56,139 [INFO] httpx: HTTP Request: GET http://testserver/syllabus "HTTP/1.1 200 OK"
+2026-06-29 14:16:02,761 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:16:03,192 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:16:03,195 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:16:03,207 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-06-29 14:16:03,246 [INFO] httpx: HTTP Request: GET http://testserver/teacher/students "HTTP/1.1 200 OK"
+2026-06-29 14:16:03,550 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=1&page_size=100 "HTTP/1.1 200 OK"
+2026-06-29 14:16:03,837 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=2&page_size=100 "HTTP/1.1 200 OK"
+2026-06-29 14:16:04,094 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=3&page_size=100 "HTTP/1.1 200 OK"
+2026-06-29 14:16:10,811 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:16:11,251 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:16:11,254 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:16:11,287 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=1&page_size=5&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-06-29 14:16:18,252 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:16:18,699 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:16:18,702 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:16:25,792 [INFO] app.main: Login attempt: username=amin
+2026-06-29 14:16:26,240 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 14:16:26,243 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:16:32,669 [INFO] app.main: Login attempt: username=amin
+2026-06-29 14:16:33,104 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 14:16:33,107 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:16:33,119 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-29 14:16:35,809 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:16:38,426 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:16:38,450 [INFO] app.main: Question generated successfully: id=289, prompt=Hitungkan hasil darab 2/3 dengan 4/5....
+2026-06-29 14:16:38,460 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-29 14:16:38,468 [INFO] app.main: Attempt submitted: student_id=2, question_id=289
+2026-06-29 14:16:38,510 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-29 14:16:38,514 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-29 14:16:45,206 [INFO] app.main: Login attempt: username=amin
+2026-06-29 14:16:45,638 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 14:16:45,641 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:16:45,651 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-29 14:16:48,483 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:16:50,824 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:16:50,954 [INFO] app.main: Question generated successfully: id=289, prompt=Hitungkan hasil darab 3/4 dengan 2/3....
+2026-06-29 14:16:50,965 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-29 14:16:50,974 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-29 14:16:53,873 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:16:56,341 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:16:56,363 [INFO] app.main: Question generated successfully: id=290, prompt=Hitungkan hasil darab pecahan berikut: \( \frac{2}...
+2026-06-29 14:16:56,372 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-29 14:16:56,379 [INFO] app.main: Attempt submitted: student_id=2, question_id=289
+2026-06-29 14:16:56,429 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=43.5
+2026-06-29 14:16:56,433 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-29 14:16:56,440 [INFO] app.main: Attempt submitted: student_id=2, question_id=290
+2026-06-29 14:16:56,468 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=42.0
+2026-06-29 14:16:56,472 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-29 14:16:56,494 [INFO] httpx: HTTP Request: GET http://testserver/student/mistakes?page=1&page_size=1&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-06-29 14:17:06,042 [INFO] app.main: Login attempt: username=amin
+2026-06-29 14:17:06,479 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 14:17:06,482 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:17:06,492 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-29 14:17:09,007 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:17:09,029 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-06-29 14:17:09,040 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-29 14:17:09,047 [INFO] app.main: Attempt submitted: student_id=2, question_id=289
+2026-06-29 14:17:09,088 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-29 14:17:09,092 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-29 14:17:09,103 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-29 14:17:11,574 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:17:12,084 [INFO] app.main: Question generated successfully: id=290, prompt=Soalan AI ujian 2 untuk Darab Pecahan....
+2026-06-29 14:17:12,091 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-29 14:17:20,047 [INFO] app.main: Login attempt: username=amin
+2026-06-29 14:17:20,479 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 14:17:20,482 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:17:20,492 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-29 14:17:23,190 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:17:23,207 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-06-29 14:17:23,219 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-29 14:17:23,229 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-29 14:17:25,880 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:17:25,909 [INFO] app.main: Question generated successfully: id=290, prompt=Soalan AI ujian 2 untuk Darab Pecahan....
+2026-06-29 14:17:25,916 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-29 14:17:32,946 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:17:33,395 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:17:33,398 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:17:33,423 [INFO] httpx: HTTP Request: POST http://testserver/teacher/chapters "HTTP/1.1 201 Created"
+2026-06-29 14:17:33,450 [INFO] httpx: HTTP Request: POST http://testserver/teacher/subtopics "HTTP/1.1 201 Created"
+2026-06-29 14:17:33,453 [INFO] app.main: Login attempt: username=amin
+2026-06-29 14:17:33,903 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 14:17:33,906 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:17:33,937 [INFO] app.main: Generating question: subtopic_id=49, difficulty=medium, type=short_answer
+2026-06-29 14:17:33,937 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 1/5); retrying
+2026-06-29 14:17:33,937 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 2/5); retrying
+2026-06-29 14:17:33,938 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 3/5); retrying
+2026-06-29 14:17:33,938 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 4/5); retrying
+2026-06-29 14:17:33,938 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 5/5); retrying
+2026-06-29 14:17:33,938 [ERROR] app.main: Failed to generate question after 5 LLM attempts and 0 duplicate checks
+2026-06-29 14:17:36,314 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:17:36,383 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=49 "HTTP/1.1 200 OK"
+2026-06-29 14:17:44,666 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:17:45,157 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:17:45,160 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:17:45,186 [INFO] httpx: HTTP Request: POST http://testserver/teacher/chapters "HTTP/1.1 201 Created"
+2026-06-29 14:17:45,213 [INFO] httpx: HTTP Request: POST http://testserver/teacher/subtopics "HTTP/1.1 201 Created"
+2026-06-29 14:17:45,252 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions "HTTP/1.1 201 Created"
+2026-06-29 14:17:45,256 [INFO] app.main: Login attempt: username=amin
+2026-06-29 14:17:45,703 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 14:17:45,707 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:17:45,750 [INFO] app.main: Generating question: subtopic_id=49, difficulty=medium, type=short_answer
+2026-06-29 14:17:45,750 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 1/5); retrying
+2026-06-29 14:17:45,751 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 2/5); retrying
+2026-06-29 14:17:45,751 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 3/5); retrying
+2026-06-29 14:17:45,751 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 4/5); retrying
+2026-06-29 14:17:45,751 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 5/5); retrying
+2026-06-29 14:17:45,751 [ERROR] app.main: Failed to generate question after 5 LLM attempts and 0 duplicate checks
+2026-06-29 14:17:47,779 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:17:47,806 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=49 "HTTP/1.1 200 OK"
+2026-06-29 14:17:54,453 [INFO] app.main: Login attempt: username=amin
+2026-06-29 14:17:54,890 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 14:17:54,893 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:17:54,954 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/start "HTTP/1.1 201 Created"
+2026-06-29 14:18:01,768 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:18:02,207 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:18:02,210 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:18:02,221 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-06-29 14:18:02,690 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-06-29 14:18:02,704 [INFO] app.main: Login attempt: username=compready
+2026-06-29 14:18:03,137 [INFO] app.main: Login successful: user_id=7, role=student, username=compready
+2026-06-29 14:18:03,140 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:18:03,182 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-29 14:18:10,291 [INFO] app.main: Login attempt: username=amin
+2026-06-29 14:18:10,740 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 14:18:10,743 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:18:10,785 [INFO] httpx: HTTP Request: GET http://testserver/student/progress "HTTP/1.1 200 OK"
+2026-06-29 14:18:17,581 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:18:18,035 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:18:18,039 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:18:18,066 [INFO] httpx: HTTP Request: POST http://testserver/teacher/classes "HTTP/1.1 201 Created"
+2026-06-29 14:18:18,092 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-06-29 14:18:18,113 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-06-29 14:18:24,875 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:18:25,491 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:18:25,494 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:18:25,505 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-06-29 14:18:25,980 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-06-29 14:18:26,450 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-06-29 14:18:26,472 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-06-29 14:18:33,055 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:18:33,491 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:18:33,495 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:18:33,506 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 404 Not Found"
+2026-06-29 14:18:39,876 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:18:40,309 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:18:40,311 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:18:40,333 [INFO] httpx: HTTP Request: POST http://testserver/teacher/chapters "HTTP/1.1 201 Created"
+2026-06-29 14:18:40,356 [INFO] httpx: HTTP Request: POST http://testserver/teacher/subtopics "HTTP/1.1 201 Created"
+2026-06-29 14:18:40,378 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/subtopics/49 "HTTP/1.1 200 OK"
+2026-06-29 14:18:40,404 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/chapters/9 "HTTP/1.1 200 OK"
+2026-06-29 14:18:47,186 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:18:47,619 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:18:47,622 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:18:47,663 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions "HTTP/1.1 201 Created"
+2026-06-29 14:18:47,976 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=1&page_size=100 "HTTP/1.1 200 OK"
+2026-06-29 14:18:48,025 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/questions/289 "HTTP/1.1 200 OK"
+2026-06-29 14:18:54,680 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:18:55,114 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:18:55,118 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:18:55,129 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-29 14:18:57,222 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:18:57,252 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-06-29 14:18:57,259 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-29 14:19:03,859 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:19:04,293 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:19:04,296 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:19:04,305 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-29 14:19:04,306 [WARNING] app.main: Generation used template fallback for teacher request (attempt 1/5)
+2026-06-29 14:19:06,660 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:19:06,687 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan template untuk Darab Pecahan....
+2026-06-29 14:19:06,694 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-29 14:19:13,384 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:19:13,820 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:19:13,823 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:19:13,832 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-29 14:19:16,126 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:19:16,169 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-06-29 14:19:16,177 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-29 14:19:22,876 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:19:23,310 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:19:23,314 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:19:23,322 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-29 14:19:25,130 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:19:25,159 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-06-29 14:19:25,168 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-29 14:19:25,177 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-29 14:19:27,434 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:19:27,476 [INFO] app.main: Question generated successfully: id=290, prompt=Soalan AI ujian 2 untuk Darab Pecahan....
+2026-06-29 14:19:27,483 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-29 14:19:34,227 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:19:34,662 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:19:34,665 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:19:34,695 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions "HTTP/1.1 201 Created"
+2026-06-29 14:19:34,704 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-29 14:19:36,597 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 14:19:36,632 [INFO] app.main: Question generated successfully: id=290, prompt=Soalan unik selepas semakan pendua....
+2026-06-29 14:19:36,639 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-29 14:19:44,167 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:19:44,616 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:19:44,619 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:19:44,664 [INFO] httpx: HTTP Request: GET http://testserver/teacher/analytics/classes/1 "HTTP/1.1 200 OK"
+2026-06-29 14:19:57,059 [INFO] app.main: Login attempt: username=amin
+2026-06-29 14:19:57,514 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 14:19:57,518 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:19:57,533 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 400 Bad Request"
+2026-06-29 14:20:05,082 [INFO] app.main: Login attempt: username=amin
+2026-06-29 14:20:05,526 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 14:20:05,529 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:20:05,540 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 400 Bad Request"
+2026-06-29 14:20:11,925 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:20:12,376 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:20:12,381 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:20:12,861 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-06-29 14:20:12,864 [INFO] app.main: Login attempt: username=fresh_diagnostic_student
+2026-06-29 14:20:13,298 [INFO] app.main: Login successful: user_id=7, role=student, username=fresh_diagnostic_student
+2026-06-29 14:20:13,300 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:20:13,343 [INFO] httpx: HTTP Request: GET http://testserver/student/dashboard "HTTP/1.1 200 OK"
+2026-06-29 14:20:13,416 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/start "HTTP/1.1 201 Created"
+2026-06-29 14:20:13,443 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-29 14:20:13,519 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-06-29 14:20:13,552 [INFO] httpx: HTTP Request: GET http://testserver/student/dashboard "HTTP/1.1 200 OK"
+2026-06-29 14:20:20,119 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 14:20:20,553 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 14:20:20,556 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:20:21,013 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-06-29 14:20:21,015 [INFO] app.main: Login attempt: username=fresh_diagnostic_complete
+2026-06-29 14:20:21,450 [INFO] app.main: Login successful: user_id=7, role=student, username=fresh_diagnostic_complete
+2026-06-29 14:20:21,453 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:20:21,553 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/start "HTTP/1.1 201 Created"
+2026-06-29 14:20:21,592 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-29 14:20:21,682 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-06-29 14:20:21,707 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-29 14:20:21,781 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-06-29 14:20:21,802 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-29 14:20:21,869 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-06-29 14:20:21,890 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-29 14:20:21,957 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-06-29 14:20:21,981 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-29 14:20:22,104 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-06-29 14:20:22,128 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-29 14:20:22,203 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-06-29 14:20:22,224 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-29 14:20:22,278 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-06-29 14:20:22,297 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-29 14:20:22,355 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-06-29 14:20:22,366 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-06-29 14:20:22,389 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/summary?session_id=1 "HTTP/1.1 200 OK"
+2026-06-29 14:20:22,423 [INFO] httpx: HTTP Request: GET http://testserver/student/dashboard "HTTP/1.1 200 OK"
+2026-06-29 14:22:36,586 [INFO] app.main: Login attempt: username=amin
+2026-06-29 14:22:37,051 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 14:22:37,056 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:22:37,070 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 400 Bad Request"
+2026-06-29 14:22:44,263 [INFO] app.main: Login attempt: username=amin
+2026-06-29 14:22:44,700 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 14:22:44,703 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:22:44,715 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 400 Bad Request"
+2026-06-29 14:23:23,355 [INFO] app.main: Login attempt: username=amin
+2026-06-29 14:23:23,794 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 14:23:23,798 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 14:23:23,811 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 400 Bad Request"
+2026-06-29 15:47:25,271 [INFO] httpx: HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-06-29 15:47:32,201 [INFO] httpx: HTTP Request: GET http://testserver/syllabus "HTTP/1.1 200 OK"
+2026-06-29 15:47:39,414 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:47:39,862 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:47:39,865 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:47:39,878 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-06-29 15:47:39,923 [INFO] httpx: HTTP Request: GET http://testserver/teacher/students "HTTP/1.1 200 OK"
+2026-06-29 15:47:40,327 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=1&page_size=100 "HTTP/1.1 200 OK"
+2026-06-29 15:47:40,722 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=2&page_size=100 "HTTP/1.1 200 OK"
+2026-06-29 15:47:41,093 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=3&page_size=100 "HTTP/1.1 200 OK"
+2026-06-29 15:47:48,017 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:47:48,468 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:47:48,472 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:47:48,509 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=1&page_size=5&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-06-29 15:47:55,380 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:47:55,816 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:47:55,820 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:48:02,291 [INFO] app.main: Login attempt: username=amin
+2026-06-29 15:48:02,728 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 15:48:02,731 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:48:09,445 [INFO] app.main: Login attempt: username=amin
+2026-06-29 15:48:09,878 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 15:48:09,881 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:48:09,892 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-29 15:48:14,568 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 15:48:14,618 [INFO] app.main: Question generated successfully: id=289, prompt=Hitung hasil darab 3/4 dengan 2/5....
+2026-06-29 15:48:14,632 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-29 15:48:14,639 [INFO] app.main: Attempt submitted: student_id=2, question_id=289
+2026-06-29 15:48:14,686 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-29 15:48:14,689 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-29 15:48:21,050 [INFO] app.main: Login attempt: username=amin
+2026-06-29 15:48:21,483 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 15:48:21,486 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:48:21,496 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-29 15:48:27,356 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 15:48:27,378 [INFO] app.main: Question generated successfully: id=289, prompt=Jika Ali mempunyai \( \frac{3}{4} \) kg gula dan d...
+2026-06-29 15:48:27,389 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-29 15:48:27,398 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-29 15:48:34,347 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 15:48:34,388 [INFO] app.main: Question generated successfully: id=290, prompt=Jika Ali mempunyai \( \frac{3}{4} \) daripada seke...
+2026-06-29 15:48:34,396 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-29 15:48:34,402 [INFO] app.main: Attempt submitted: student_id=2, question_id=289
+2026-06-29 15:48:34,439 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=43.5
+2026-06-29 15:48:34,443 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-29 15:48:34,449 [INFO] app.main: Attempt submitted: student_id=2, question_id=290
+2026-06-29 15:48:34,478 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=42.0
+2026-06-29 15:48:34,481 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-29 15:48:34,500 [INFO] httpx: HTTP Request: GET http://testserver/student/mistakes?page=1&page_size=1&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-06-29 15:48:41,284 [INFO] app.main: Login attempt: username=amin
+2026-06-29 15:48:41,725 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 15:48:41,728 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:48:41,739 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-29 15:48:44,017 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 15:48:44,084 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-06-29 15:48:44,094 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-29 15:48:44,100 [INFO] app.main: Attempt submitted: student_id=2, question_id=289
+2026-06-29 15:48:44,137 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-06-29 15:48:44,140 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-06-29 15:48:44,149 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-29 15:48:46,476 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 15:48:46,514 [INFO] app.main: Question generated successfully: id=290, prompt=Soalan AI ujian 2 untuk Darab Pecahan....
+2026-06-29 15:48:46,524 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-29 15:48:53,470 [INFO] app.main: Login attempt: username=amin
+2026-06-29 15:48:53,917 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 15:48:53,920 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:48:53,929 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-29 15:48:56,078 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 15:48:56,118 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-06-29 15:48:56,128 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-29 15:48:56,137 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-06-29 15:48:58,265 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 15:48:58,302 [INFO] app.main: Question generated successfully: id=290, prompt=Soalan AI ujian 2 untuk Darab Pecahan....
+2026-06-29 15:48:58,311 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-06-29 15:49:05,358 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:49:05,798 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:49:05,801 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:49:05,838 [INFO] httpx: HTTP Request: POST http://testserver/teacher/chapters "HTTP/1.1 201 Created"
+2026-06-29 15:49:05,862 [INFO] httpx: HTTP Request: POST http://testserver/teacher/subtopics "HTTP/1.1 201 Created"
+2026-06-29 15:49:05,865 [INFO] app.main: Login attempt: username=amin
+2026-06-29 15:49:06,307 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 15:49:06,310 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:49:06,336 [INFO] app.main: Generating question: subtopic_id=49, difficulty=medium, type=short_answer
+2026-06-29 15:49:06,336 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 1/5); retrying
+2026-06-29 15:49:06,337 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 2/5); retrying
+2026-06-29 15:49:06,337 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 3/5); retrying
+2026-06-29 15:49:06,337 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 4/5); retrying
+2026-06-29 15:49:06,337 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 5/5); retrying
+2026-06-29 15:49:06,337 [ERROR] app.main: Failed to generate question after 5 LLM attempts and 0 duplicate checks
+2026-06-29 15:49:06,370 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=49 "HTTP/1.1 200 OK"
+2026-06-29 15:49:13,032 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:49:13,477 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:49:13,480 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:49:13,529 [INFO] httpx: HTTP Request: POST http://testserver/teacher/chapters "HTTP/1.1 201 Created"
+2026-06-29 15:49:13,556 [INFO] httpx: HTTP Request: POST http://testserver/teacher/subtopics "HTTP/1.1 201 Created"
+2026-06-29 15:49:13,586 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions "HTTP/1.1 201 Created"
+2026-06-29 15:49:13,589 [INFO] app.main: Login attempt: username=amin
+2026-06-29 15:49:14,028 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 15:49:14,031 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:49:14,067 [INFO] app.main: Generating question: subtopic_id=49, difficulty=medium, type=short_answer
+2026-06-29 15:49:14,067 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 1/5); retrying
+2026-06-29 15:49:14,067 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 2/5); retrying
+2026-06-29 15:49:14,067 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 3/5); retrying
+2026-06-29 15:49:14,067 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 4/5); retrying
+2026-06-29 15:49:14,067 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 5/5); retrying
+2026-06-29 15:49:14,068 [ERROR] app.main: Failed to generate question after 5 LLM attempts and 0 duplicate checks
+2026-06-29 15:49:16,115 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 15:49:16,146 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=49 "HTTP/1.1 200 OK"
+2026-06-29 15:49:22,978 [INFO] app.main: Login attempt: username=amin
+2026-06-29 15:49:23,426 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 15:49:23,429 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:49:23,512 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/start "HTTP/1.1 201 Created"
+2026-06-29 15:49:30,257 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:49:30,699 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:49:30,703 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:49:30,715 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-06-29 15:49:31,186 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-06-29 15:49:31,200 [INFO] app.main: Login attempt: username=compready
+2026-06-29 15:49:31,641 [INFO] app.main: Login successful: user_id=7, role=student, username=compready
+2026-06-29 15:49:31,644 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:49:31,714 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-06-29 15:49:38,306 [INFO] app.main: Login attempt: username=amin
+2026-06-29 15:49:38,749 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-06-29 15:49:38,753 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:49:38,794 [INFO] httpx: HTTP Request: GET http://testserver/student/progress "HTTP/1.1 200 OK"
+2026-06-29 15:49:45,576 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:49:46,034 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:49:46,038 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:49:46,065 [INFO] httpx: HTTP Request: POST http://testserver/teacher/classes "HTTP/1.1 201 Created"
+2026-06-29 15:49:46,087 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-06-29 15:49:46,111 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-06-29 15:49:52,605 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:49:53,051 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:49:53,055 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:49:53,066 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-06-29 15:49:53,527 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-06-29 15:49:54,010 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-06-29 15:49:54,034 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-06-29 15:50:00,947 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:50:01,393 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:50:01,396 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:50:01,409 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 404 Not Found"
+2026-06-29 15:50:08,214 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:50:08,660 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:50:08,662 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:50:08,684 [INFO] httpx: HTTP Request: POST http://testserver/teacher/chapters "HTTP/1.1 201 Created"
+2026-06-29 15:50:08,707 [INFO] httpx: HTTP Request: POST http://testserver/teacher/subtopics "HTTP/1.1 201 Created"
+2026-06-29 15:50:08,734 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/subtopics/49 "HTTP/1.1 200 OK"
+2026-06-29 15:50:08,761 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/chapters/9 "HTTP/1.1 200 OK"
+2026-06-29 15:50:15,698 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:50:16,138 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:50:16,141 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:50:16,182 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions "HTTP/1.1 201 Created"
+2026-06-29 15:50:16,509 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=1&page_size=100 "HTTP/1.1 200 OK"
+2026-06-29 15:50:16,546 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/questions/289 "HTTP/1.1 200 OK"
+2026-06-29 15:50:23,166 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:50:23,600 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:50:23,603 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:50:23,615 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-29 15:50:25,909 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 15:50:25,926 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-06-29 15:50:25,933 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-29 15:50:32,730 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:50:33,179 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:50:33,182 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:50:33,191 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-29 15:50:33,192 [WARNING] app.main: Generation used template fallback for teacher request (attempt 1/5)
+2026-06-29 15:50:35,647 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 15:50:35,702 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan template untuk Darab Pecahan....
+2026-06-29 15:50:35,710 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-29 15:50:42,564 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:50:43,012 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:50:43,016 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:50:43,025 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-29 15:50:45,047 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 15:50:45,075 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-06-29 15:50:45,083 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-29 15:50:51,967 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:50:52,412 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:50:52,415 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:50:52,424 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-29 15:50:54,740 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 15:50:54,796 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-06-29 15:50:54,804 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-29 15:50:54,815 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-06-29 15:50:57,139 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 15:50:57,159 [INFO] app.main: Question generated successfully: id=290, prompt=Soalan AI ujian 2 untuk Darab Pecahan....
+2026-06-29 15:50:57,165 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-29 15:51:04,321 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:51:04,767 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:51:04,770 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:51:04,816 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions "HTTP/1.1 201 Created"
+2026-06-29 15:51:04,825 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-06-29 15:51:09,216 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 15:51:09,253 [INFO] app.main: Question generated successfully: id=290, prompt=Soalan unik selepas semakan pendua....
+2026-06-29 15:51:09,261 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-06-29 15:51:16,559 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 15:51:17,008 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-06-29 15:51:17,011 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-06-29 15:51:17,057 [INFO] httpx: HTTP Request: GET http://testserver/teacher/analytics/classes/1 "HTTP/1.1 200 OK"
+2026-06-29 16:12:56,580 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 16:12:57,016 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 16:12:57,071 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-29 16:12:57,494 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-29 16:12:59,497 [INFO] app.main: Generating question: subtopic_id=49, difficulty=medium, type=short_answer
+2026-06-29 16:13:02,053 [INFO] app.main: Generating question: subtopic_id=49, difficulty=medium, type=short_answer
+2026-06-29 16:13:04,983 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 16:13:05,029 [INFO] app.main: Question generated successfully: id=870, prompt=Tulis nombor 7,432 dalam bentuk perkataan....
+2026-06-29 16:13:05,789 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 16:13:05,827 [INFO] app.main: Question generated successfully: id=871, prompt=Tuliskan nombor bagi nilai tempat 5 dalam nombor 8...
+2026-06-29 16:52:06,335 [INFO] app.main: Login attempt: username=amin
+2026-06-29 16:52:06,824 [INFO] app.main: Login successful: user_id=8, role=student, username=amin
+2026-06-29 16:52:44,734 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-29 16:52:54,890 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 16:52:54,937 [INFO] app.main: Question generated successfully: id=872, prompt=Tuliskan nombor bagi perkataan berikut: tiga ribu ...
+2026-06-29 16:52:54,959 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-29 16:53:01,975 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 16:53:02,024 [INFO] app.main: Question generated successfully: id=873, prompt=Tuliskan nombor bagi nombor perpuluhan 7.45....
+2026-06-29 16:53:02,049 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-29 16:53:06,407 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 16:53:06,444 [INFO] app.main: Question generated successfully: id=874, prompt=Tuliskan nombor bagi perkataan 'tiga ratus lima pu...
+2026-06-29 16:53:11,094 [INFO] app.main: Attempt submitted: student_id=8, question_id=874
+2026-06-29 16:53:11,127 [INFO] app.main: Attempt recorded: student_id=8, is_correct=False, mastery_score=67.5
+2026-06-29 16:53:41,442 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 16:54:08,555 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 16:55:00,575 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 16:55:01,047 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-29 16:56:23,214 [INFO] app.main: Generating question: subtopic_id=49, difficulty=medium, type=short_answer
+2026-06-29 16:56:27,695 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 16:56:27,732 [INFO] app.main: Question generated successfully: id=877, prompt=Tuliskan nombor bagi dua ribu empat ratus tiga pul...
+2026-06-29 16:56:56,999 [INFO] app.main: Login attempt: username=amin
+2026-06-29 16:56:57,470 [INFO] app.main: Login successful: user_id=8, role=student, username=amin
+2026-06-29 16:57:05,094 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-29 16:57:09,207 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 16:57:09,243 [INFO] app.main: Question generated successfully: id=878, prompt=Tuliskan nombor bagi perkataan nombor ini: 'empat ...
+2026-06-29 16:57:09,269 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-29 16:57:12,948 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-29 16:57:12,990 [INFO] app.main: Question generated successfully: id=879, prompt=Tulis nombor bagi nombor perpuluhan 7.45 dalam ben...
+2026-06-29 16:57:30,171 [INFO] app.main: Login attempt: username=cikgu
+2026-06-29 16:57:30,632 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-29 16:58:24,139 [INFO] app.main: Login attempt: username=amin
+2026-06-29 16:58:24,591 [INFO] app.main: Login successful: user_id=8, role=student, username=amin
+2026-06-29 16:58:32,265 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 08:27:36,982 [INFO] app.main: Login attempt: username=amin
+2026-06-30 08:27:37,500 [INFO] app.main: Login successful: user_id=8, role=student, username=amin
+2026-06-30 08:27:45,382 [INFO] app.main: Generating question: subtopic_id=50, difficulty=easy, type=short_answer
+2026-06-30 08:27:50,666 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 08:27:50,723 [INFO] app.main: Question generated successfully: id=881, prompt=Susun nombor berikut dari yang terkecil ke yang te...
+2026-06-30 08:27:50,746 [INFO] app.main: Generating question: subtopic_id=50, difficulty=easy, type=short_answer
+2026-06-30 08:27:54,442 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 08:27:54,465 [INFO] app.main: Question generated successfully: id=882, prompt=Susun nombor berikut dari yang terkecil ke yang te...
+2026-06-30 09:22:11,606 [INFO] app.main: Generating question: subtopic_id=52, difficulty=medium, type=short_answer
+2026-06-30 09:22:20,298 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 09:22:20,331 [INFO] app.main: Question generated successfully: id=883, prompt=Diberikan pola nombor berikut: 2, 5, 10, 17, 26, ....
+2026-06-30 09:22:20,352 [INFO] app.main: Generating question: subtopic_id=52, difficulty=medium, type=short_answer
+2026-06-30 09:22:24,974 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 09:22:25,009 [INFO] app.main: Question generated successfully: id=884, prompt=Diberikan pola nombor berikut: 3, 7, 11, 15, ... A...
+2026-06-30 09:22:34,568 [INFO] app.main: Attempt submitted: student_id=8, question_id=884
+2026-06-30 09:22:34,601 [INFO] app.main: Attempt recorded: student_id=8, is_correct=False, mastery_score=54.0
+2026-06-30 09:23:29,267 [INFO] app.main: Login attempt: username=cikgu
+2026-06-30 09:23:29,705 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-30 09:24:10,273 [INFO] app.main: Generating question: subtopic_id=91, difficulty=hard, type=short_answer
+2026-06-30 09:24:14,225 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 09:24:14,273 [INFO] app.main: Question generated successfully: id=885, prompt=Dalam sebuah kelas, nisbah murid lelaki kepada mur...
+2026-06-30 09:42:16,292 [INFO] app.main: Login attempt: username=amin
+2026-06-30 09:42:16,725 [INFO] app.main: Login successful: user_id=8, role=student, username=amin
+2026-06-30 11:03:12,398 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-30 11:03:17,026 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:03:17,048 [INFO] app.main: Question generated successfully: id=886, prompt=Tuliskan nombor bagi perkataan nombor berikut: "Li...
+2026-06-30 11:03:17,070 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-30 11:03:22,091 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:03:22,116 [INFO] app.main: Question generated successfully: id=887, prompt=Tulis nombor bagi 'tujuh ribu dua ratus tiga puluh...
+2026-06-30 11:03:40,204 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:04:35,336 [INFO] app.main: Login attempt: username=cikgu
+2026-06-30 11:04:35,770 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-30 11:05:29,931 [INFO] app.main: Generating question: subtopic_id=78, difficulty=hard, type=short_answer
+2026-06-30 11:05:33,604 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:05:33,644 [INFO] app.main: Question generated successfully: id=889, prompt=Sebuah tali sepanjang 2.5 kilometer hendak dipoton...
+2026-06-30 11:09:18,419 [INFO] app.main: Login attempt: username=cikgu
+2026-06-30 11:09:18,872 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-30 11:09:29,398 [INFO] app.main: Login attempt: username=amin
+2026-06-30 11:09:29,849 [INFO] app.main: Login successful: user_id=8, role=student, username=amin
+2026-06-30 11:09:55,292 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-30 11:09:59,692 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:09:59,732 [INFO] app.main: Question generated successfully: id=890, prompt=Tuliskan nombor bagi "tujuh ribu tiga ratus dua pu...
+2026-06-30 11:09:59,751 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-30 11:10:04,949 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:10:04,970 [INFO] app.main: Question generated successfully: id=891, prompt=Tuliskan nombor bagi perkataan berikut: "Tiga ribu...
+2026-06-30 11:10:05,882 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-30 11:10:12,312 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:10:12,347 [INFO] app.main: Question generated successfully: id=892, prompt=Tuliskan nombor bagi bilangan berikut: Dua ribu ti...
+2026-06-30 11:10:12,367 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-30 11:10:17,086 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:10:17,122 [INFO] app.main: Question generated successfully: id=893, prompt=Tuliskan nombor bagi "tiga ribu lima ratus dua pul...

@@ -1,0 +1,81 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_global\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.11.1
+2 info using node@v22.15.0
+3 silly config load:file:C:\Program Files\nodejs\node_global\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\frontend\.npmrc
+5 silly config load:file:C:\Users\yan85\.npmrc
+6 silly config load:file:C:\Program Files\nodejs\node_global\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\frontend\.npm-cache\_logs\2026-06-17T09_18_31_688Z-
+10 verbose logfile C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\frontend\.npm-cache\_logs\2026-06-17T09_18_31_688Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules/@kurkle
+16 silly reify moves {}
+17 silly audit bulk request {
+17 silly audit   '@emnapi/core': [ '1.10.0' ],
+17 silly audit   '@emnapi/runtime': [ '1.10.0' ],
+17 silly audit   '@emnapi/wasi-threads': [ '1.2.1' ],
+17 silly audit   '@kurkle/color': [ '0.3.4' ],
+17 silly audit   '@napi-rs/wasm-runtime': [ '1.1.4' ],
+17 silly audit   '@oxc-project/types': [ '0.133.0' ],
+17 silly audit   '@rolldown/binding-android-arm64': [ '1.0.3' ],
+17 silly audit   '@rolldown/binding-darwin-arm64': [ '1.0.3' ],
+17 silly audit   '@rolldown/binding-darwin-x64': [ '1.0.3' ],
+17 silly audit   '@rolldown/binding-freebsd-x64': [ '1.0.3' ],
+17 silly audit   '@rolldown/binding-linux-arm-gnueabihf': [ '1.0.3' ],
+17 silly audit   '@rolldown/binding-linux-arm64-gnu': [ '1.0.3' ],
+17 silly audit   '@rolldown/binding-linux-arm64-musl': [ '1.0.3' ],
+17 silly audit   '@rolldown/binding-linux-ppc64-gnu': [ '1.0.3' ],
+17 silly audit   '@rolldown/binding-linux-s390x-gnu': [ '1.0.3' ],
+17 silly audit   '@rolldown/binding-linux-x64-gnu': [ '1.0.3' ],
+17 silly audit   '@rolldown/binding-linux-x64-musl': [ '1.0.3' ],
+17 silly audit   '@rolldown/binding-openharmony-arm64': [ '1.0.3' ],
+17 silly audit   '@rolldown/binding-wasm32-wasi': [ '1.0.3' ],
+17 silly audit   '@rolldown/binding-win32-arm64-msvc': [ '1.0.3' ],
+17 silly audit   '@rolldown/binding-win32-x64-msvc': [ '1.0.3' ],
+17 silly audit   '@rolldown/pluginutils': [ '1.0.1' ],
+17 silly audit   '@tybys/wasm-util': [ '0.10.2' ],
+17 silly audit   '@vitejs/plugin-react': [ '6.0.2' ],
+17 silly audit   'chart.js': [ '4.5.1' ],
+17 silly audit   'detect-libc': [ '2.1.2' ],
+17 silly audit   fdir: [ '6.5.0' ],
+17 silly audit   fsevents: [ '2.3.3' ],
+17 silly audit   lightningcss: [ '1.32.0' ],
+17 silly audit   'lightningcss-android-arm64': [ '1.32.0' ],
+17 silly audit   'lightningcss-darwin-arm64': [ '1.32.0' ],
+17 silly audit   'lightningcss-darwin-x64': [ '1.32.0' ],
+17 silly audit   'lightningcss-freebsd-x64': [ '1.32.0' ],
+17 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.32.0' ],
+17 silly audit   'lightningcss-linux-arm64-gnu': [ '1.32.0' ],
+17 silly audit   'lightningcss-linux-arm64-musl': [ '1.32.0' ],
+17 silly audit   'lightningcss-linux-x64-gnu': [ '1.32.0' ],
+17 silly audit   'lightningcss-linux-x64-musl': [ '1.32.0' ],
+17 silly audit   'lightningcss-win32-arm64-msvc': [ '1.32.0' ],
+17 silly audit   'lightningcss-win32-x64-msvc': [ '1.32.0' ],
+17 silly audit   'lucide-react': [ '1.17.0' ],
+17 silly audit   nanoid: [ '3.3.12' ],
+17 silly audit   picocolors: [ '1.1.1' ],
+17 silly audit   picomatch: [ '4.0.4' ],
+17 silly audit   postcss: [ '8.5.15' ],
+17 silly audit   react: [ '19.2.7' ],
+17 silly audit   'react-chartjs-2': [ '5.3.1' ],
+17 silly audit   'react-dom': [ '19.2.7' ],
+17 silly audit   rolldown: [ '1.0.3' ],
+17 silly audit   scheduler: [ '0.27.0' ],
+17 silly audit   'source-map-js': [ '1.2.1' ],
+17 silly audit   tinyglobby: [ '0.2.17' ],
+17 silly audit   tslib: [ '2.8.1' ],
+17 silly audit   vite: [ '8.0.16' ]
+17 silly audit }
+18 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 423ms
+19 silly audit report {}
+20 verbose cwd C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\frontend
+21 verbose os Windows_NT 10.0.26200
+22 verbose node v22.15.0
+23 verbose npm  v11.11.1
+24 verbose exit 0
+25 info ok

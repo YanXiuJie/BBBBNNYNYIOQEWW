@@ -1,0 +1,69 @@
+================================================================================
+COMPREHENSIVE PRACTICE SUBTOPIC SELECTION BUG FIX
+================================================================================
+
+Problem:
+--------
+Comprehensive practice system had 85% failure rate because it randomly selected
+from 48 active subtopics, but only 7 subtopics have questions in the database.
+
+Root Cause:
+-----------
+All subtopic selection queries used:
+  select(Subtopic).where(Subtopic.is_active == True)
+
+This returns ALL subtopics regardless of whether they have questions.
+
+Solution:
+---------
+Added JOIN Question filter to all subtopic selection queries:
+  select(Subtopic)
+    .join(Question, Subtopic.id == Question.subtopic_id)
+    .where(Subtopic.is_active == True)
+    .where(Question.is_active == True)
+    .distinct()
+
+Fixed Locations:
+----------------
+1. backend/app/services/adaptive_selector.py:195
+   Function: _identify_weakest_from_phase1
+   Phase: Fallback when no phase1_results available
+
+2. backend/app/services/adaptive_selector.py:266
+   Function: _phase1_diagnosis
+   Phase: Phase 1 (Diagnosis) - Questions 1-5
+
+3. backend/app/services/adaptive_selector.py:395
+   Function: _phase3_consolidation
+   Phase: Phase 3 (Consolidation) - Questions 11-15, random selection (40%)
+
+4. backend/app/main.py:499-504
+   Endpoint: POST /student/comprehensive-practice/start
+   Purpose: Initial weak subtopic query for session creation
+
+Impact:
+-------
+- Before: 85% failure rate (41/48 subtopics have no questions)
+- After: 100% success rate (only select from 7 subtopics with questions)
+
+Verification:
+-------------
+Created verify_subtopic_fix.py script to check all files.
+Result: All comprehensive practice queries now filter by questions.
+
+Git Commit:
+-----------
+Commit: 39fe441
+Branch: codex/fyp2-malay-adaptive-mvp
+Message: fix: comprehensive practice subtopic selection only from subtopics with questions
+
+Notes:
+------
+- Phase 2 (Remedial) was already safe - it only uses weak_subtopics from Phase 1
+- Other endpoints (syllabus, diagnostic, delete_chapter, analytics) still query
+  all subtopics, but they don't affect comprehensive practice functionality
+- No database schema changes required
+- No migration needed
+- Backwards compatible
+
+================================================================================

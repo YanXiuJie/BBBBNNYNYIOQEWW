@@ -1,0 +1,119 @@
+- generic [ref=e22]:
+  - complementary [ref=e23]:
+    - generic [ref=e24]: Adaptive Math AI
+    - navigation [ref=e25]:
+      - button "Class Dashboard" [ref=e26] [cursor=pointer]:
+        - img [ref=e27]
+        - generic [ref=e29]: Class Dashboard
+      - button "Class Management" [ref=e30] [cursor=pointer]:
+        - img [ref=e31]
+        - generic [ref=e36]: Class Management
+      - button "Student Management" [ref=e37] [cursor=pointer]:
+        - img [ref=e38]
+        - generic [ref=e43]: Student Management
+      - button "Student Detail" [ref=e44] [cursor=pointer]:
+        - img [ref=e45]
+        - generic [ref=e53]: Student Detail
+      - button "Syllabus" [ref=e54] [cursor=pointer]:
+        - img [ref=e55]
+        - generic [ref=e57]: Syllabus
+      - button "Question Bank" [ref=e58] [cursor=pointer]:
+        - img [ref=e59]
+        - generic [ref=e63]: Question Bank
+      - button "AI Generator" [ref=e64] [cursor=pointer]:
+        - img [ref=e65]
+        - generic [ref=e68]: AI Generator
+  - generic [ref=e69]:
+    - banner [ref=e70]:
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: Teacher/Admin Portal
+        - heading "Pengurusan Pembelajaran Adaptif" [level=1] [ref=e73]
+      - generic [ref=e74]:
+        - generic [ref=e75]: Cikgu Siti
+        - button "Log keluar" [ref=e76] [cursor=pointer]:
+          - img [ref=e77]
+    - main [ref=e80]:
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - paragraph [ref=e84]: Class Analytics
+            - heading "Class Dashboard" [level=2] [ref=e85]
+          - combobox [ref=e86]:
+            - option "Tahun 5 Bestari" [selected]
+            - option "yes"
+            - option "Tahun 5 Amanah"
+            - option "0722"
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e89]: Average Mastery
+            - strong [ref=e90]: 64%
+          - generic [ref=e91]:
+            - generic [ref=e92]: Average Accuracy
+            - strong [ref=e93]: 82%
+          - generic [ref=e94]:
+            - generic [ref=e95]: At Risk
+            - strong [ref=e96]: "0"
+          - generic [ref=e97]:
+            - generic [ref=e98]: Students
+            - strong [ref=e99]: "4"
+        - generic [ref=e100]:
+          - heading "Weak Subtopics" [level=3] [ref=e101]
+          - generic [ref=e102]:
+            - generic [ref=e103]:
+              - text: Kenal dan Tulis Nombor
+              - strong [ref=e106]: 48%
+            - generic [ref=e107]:
+              - text: Banding dan Susun Nombor
+              - strong [ref=e110]: 50%
+            - generic [ref=e111]:
+              - text: Tambah
+              - strong [ref=e114]: 50%
+            - generic [ref=e115]:
+              - text: Tambah Nilai Wang
+              - strong [ref=e118]: 50%
+            - generic [ref=e119]:
+              - text: Simpan dan Labur
+              - strong [ref=e122]: 50%
+        - generic [ref=e123]:
+          - heading "Student Risk List" [level=3] [ref=e124]
+          - table [ref=e126]:
+            - rowgroup [ref=e127]:
+              - row "Name Mastery Accuracy Risk Action" [ref=e128]:
+                - columnheader "Name" [ref=e129]
+                - columnheader "Mastery" [ref=e130]
+                - columnheader "Accuracy" [ref=e131]
+                - columnheader "Risk" [ref=e132]
+                - columnheader "Action" [ref=e133]
+            - rowgroup [ref=e134]:
+              - row "Amin Hakim 52% 86% Moderate Analytics" [ref=e135]:
+                - cell "Amin Hakim" [ref=e136]
+                - cell "52%" [ref=e137]
+                - cell "86%" [ref=e138]
+                - cell "Moderate" [ref=e139]:
+                  - generic [ref=e140]: Moderate
+                - cell "Analytics" [ref=e141]:
+                  - button "Analytics" [ref=e142] [cursor=pointer]
+              - row "Rayan Danish 78% 75% Strong Analytics" [ref=e143]:
+                - cell "Rayan Danish" [ref=e144]
+                - cell "78%" [ref=e145]
+                - cell "75%" [ref=e146]
+                - cell "Strong" [ref=e147]:
+                  - generic [ref=e148]: Strong
+                - cell "Analytics" [ref=e149]:
+                  - button "Analytics" [ref=e150] [cursor=pointer]
+              - row "Sara Aina 62% 75% Moderate Analytics" [ref=e151]:
+                - cell "Sara Aina" [ref=e152]
+                - cell "62%" [ref=e153]
+                - cell "75%" [ref=e154]
+                - cell "Moderate" [ref=e155]:
+                  - generic [ref=e156]: Moderate
+                - cell "Analytics" [ref=e157]:
+                  - button "Analytics" [ref=e158] [cursor=pointer]
+              - row "Yong 0% 0% Moderate Analytics" [ref=e159]:
+                - cell "Yong" [ref=e160]
+                - cell "0%" [ref=e161]
+                - cell "0%" [ref=e162]
+                - cell "Moderate" [ref=e163]:
+                  - generic [ref=e164]: Moderate
+                - cell "Analytics" [ref=e165]:
+                  - button "Analytics" [ref=e166] [cursor=pointer]

@@ -1,0 +1,72 @@
+- generic [ref=e22]:
+  - complementary [ref=e23]:
+    - generic [ref=e24]: Adaptive Math AI
+    - navigation [ref=e25]:
+      - button "Dashboard" [ref=e26] [cursor=pointer]:
+        - img [ref=e27]
+        - generic [ref=e30]: Dashboard
+      - button "Diagnostic Test" [ref=e31] [cursor=pointer]:
+        - img [ref=e32]
+        - generic [ref=e35]: Diagnostic Test
+      - button "Topic Selection" [ref=e36] [cursor=pointer]:
+        - img [ref=e37]
+        - generic [ref=e41]: Topic Selection
+      - button "Adaptive Practice" [ref=e42] [cursor=pointer]:
+        - img [ref=e43]
+        - generic [ref=e45]: Adaptive Practice
+      - button "Progress & Stats" [ref=e46] [cursor=pointer]:
+        - img [ref=e47]
+        - generic [ref=e49]: Progress & Stats
+      - button "Review Mistakes" [ref=e50] [cursor=pointer]:
+        - img [ref=e51]
+        - generic [ref=e56]: Review Mistakes
+      - button "Profile" [ref=e57] [cursor=pointer]:
+        - img [ref=e58]
+        - generic [ref=e61]: Profile
+  - generic [ref=e62]:
+    - banner [ref=e63]:
+      - generic [ref=e64]:
+        - paragraph [ref=e65]: Student Portal
+        - heading "Matematik Tahun 5" [level=1] [ref=e66]
+      - generic [ref=e67]:
+        - generic [ref=e68]: Amin Hakim
+        - button "Log keluar" [ref=e69] [cursor=pointer]:
+          - img [ref=e70]
+    - main [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - paragraph [ref=e76]: Student Dashboard
+          - heading "Selamat datang, Amin Hakim" [level=2] [ref=e77]
+        - generic [ref=e78]:
+          - generic [ref=e79]:
+            - generic [ref=e80]: Diagnostic
+            - strong [ref=e81]: Completed
+          - generic [ref=e82]:
+            - generic [ref=e83]: Weak Subtopics
+            - strong [ref=e84]: "4"
+          - generic [ref=e85]:
+            - generic [ref=e86]: Recommendation
+            - strong [ref=e87]: Kenal dan Tulis Nombor
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - paragraph [ref=e90]: AI Recommended Next Activity
+            - heading "Kenal dan Tulis Nombor" [level=3] [ref=e91]
+            - paragraph [ref=e92]: Latihan seterusnya dipilih berdasarkan mastery, jawapan dan masa menjawab.
+          - button "Mula Latihan" [ref=e93] [cursor=pointer]
+        - generic [ref=e94]:
+          - generic [ref=e95]:
+            - heading "Topik Perlu Perhatian" [level=3] [ref=e96]
+            - button "Lihat Kemajuan" [ref=e97] [cursor=pointer]
+          - generic [ref=e98]:
+            - button "Kenal dan Tulis Nombor High Risk" [ref=e99] [cursor=pointer]:
+              - strong [ref=e100]: Kenal dan Tulis Nombor
+              - generic [ref=e101]: High Risk
+            - button "Banding dan Susun Nombor Moderate" [ref=e102] [cursor=pointer]:
+              - strong [ref=e103]: Banding dan Susun Nombor
+              - generic [ref=e104]: Moderate
+            - button "Nombor Perdana Moderate" [ref=e105] [cursor=pointer]:
+              - strong [ref=e106]: Nombor Perdana
+              - generic [ref=e107]: Moderate
+            - button "Pola Nombor Moderate" [ref=e108] [cursor=pointer]:
+              - strong [ref=e109]: Pola Nombor
+              - generic [ref=e110]: Moderate

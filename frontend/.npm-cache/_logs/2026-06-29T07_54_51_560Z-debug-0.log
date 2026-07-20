@@ -1,0 +1,23 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_global\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.11.1
+2 info using node@v22.15.0
+3 silly config load:file:C:\Program Files\nodejs\node_global\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\yan85\OneDrive - mmu.edu.my\FYP\FYP2 submit\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\frontend\.npmrc
+5 silly config load:file:C:\Users\yan85\.npmrc
+6 silly config load:file:C:\Program Files\nodejs\node_global\etc\npmrc
+7 verbose title npm run dev 127.0.0.1 5173
+8 verbose argv "run" "dev" "--host" "127.0.0.1" "--port" "5173"
+9 verbose logfile logs-max:10 dir:C:\Users\yan85\OneDrive - mmu.edu.my\FYP\FYP2 submit\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\frontend\.npm-cache\_logs\2026-06-29T07_54_51_560Z-
+10 verbose logfile C:\Users\yan85\OneDrive - mmu.edu.my\FYP\FYP2 submit\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\frontend\.npm-cache\_logs\2026-06-29T07_54_51_560Z-debug-0.log
+11 warn "127.0.0.1" is being parsed as a normal command line argument.
+12 warn "5173" is being parsed as a normal command line argument.
+13 warn Unknown cli config "--host". This will stop working in the next major version of npm.
+14 warn Unknown cli config "--port". This will stop working in the next major version of npm.
+15 silly logfile start cleaning logs, removing 1 files
+16 silly logfile done cleaning log files
+17 verbose cwd C:\Users\yan85\OneDrive - mmu.edu.my\FYP\FYP2 submit\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\frontend
+18 verbose os Windows_NT 10.0.26200
+19 verbose node v22.15.0
+20 verbose npm  v11.11.1
+21 verbose exit 1
+22 verbose code 1

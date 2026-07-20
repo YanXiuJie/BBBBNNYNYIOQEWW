@@ -1,0 +1,118 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_global\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.11.1
+2 info using node@v22.15.0
+3 silly config load:file:C:\Program Files\nodejs\node_global\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\frontend\.npmrc
+5 silly config load:file:C:\Users\yan85\.npmrc
+6 silly config load:file:C:\Program Files\nodejs\node_global\etc\npmrc
+7 verbose title npm install chart.js react-chartjs-2
+8 verbose argv "install" "chart.js" "react-chartjs-2"
+9 verbose logfile logs-max:10 dir:C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\frontend\.npm-cache\_logs\2026-06-17T05_38_05_231Z-
+10 verbose logfile C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\frontend\.npm-cache\_logs\2026-06-17T05_38_05_231Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly logfile done cleaning log files
+14 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+15 silly idealTree buildDeps
+16 silly fetch manifest chart.js@*
+17 silly packumentCache full:https://registry.npmjs.org/chart.js cache-miss
+18 http fetch GET 200 https://registry.npmjs.org/npm 359ms
+19 http fetch GET 200 https://registry.npmjs.org/chart.js 753ms (cache miss)
+20 silly packumentCache full:https://registry.npmjs.org/chart.js set size:undefined disposed:false
+21 silly fetch manifest react-chartjs-2@*
+22 silly packumentCache full:https://registry.npmjs.org/react-chartjs-2 cache-miss
+23 http fetch GET 200 https://registry.npmjs.org/react-chartjs-2 234ms (cache miss)
+24 silly packumentCache full:https://registry.npmjs.org/react-chartjs-2 set size:undefined disposed:false
+25 silly fetch manifest react@latest
+26 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+27 http fetch GET 200 https://registry.npmjs.org/react 661ms (cache updated)
+28 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+29 silly placeDep ROOT chart.js@4.5.1 OK for:  want: *
+30 silly placeDep ROOT react-chartjs-2@5.3.1 OK for:  want: *
+31 silly fetch manifest @kurkle/color@^0.3.0
+32 silly packumentCache full:https://registry.npmjs.org/@kurkle%2fcolor cache-miss
+33 http fetch GET 200 https://registry.npmjs.org/@kurkle%2fcolor 583ms (cache miss)
+34 silly packumentCache full:https://registry.npmjs.org/@kurkle%2fcolor set size:undefined disposed:false
+35 silly placeDep ROOT @kurkle/color@0.3.4 OK for: chart.js@4.5.1 want: ^0.3.0
+36 silly reify moves {}
+37 silly audit bulk request {
+37 silly audit   '@emnapi/core': [ '1.10.0' ],
+37 silly audit   '@emnapi/runtime': [ '1.10.0' ],
+37 silly audit   '@emnapi/wasi-threads': [ '1.2.1' ],
+37 silly audit   '@napi-rs/wasm-runtime': [ '1.1.4' ],
+37 silly audit   '@oxc-project/types': [ '0.133.0' ],
+37 silly audit   '@rolldown/binding-android-arm64': [ '1.0.3' ],
+37 silly audit   '@rolldown/binding-darwin-arm64': [ '1.0.3' ],
+37 silly audit   '@rolldown/binding-darwin-x64': [ '1.0.3' ],
+37 silly audit   '@rolldown/binding-freebsd-x64': [ '1.0.3' ],
+37 silly audit   '@rolldown/binding-linux-arm-gnueabihf': [ '1.0.3' ],
+37 silly audit   '@rolldown/binding-linux-arm64-gnu': [ '1.0.3' ],
+37 silly audit   '@rolldown/binding-linux-arm64-musl': [ '1.0.3' ],
+37 silly audit   '@rolldown/binding-linux-ppc64-gnu': [ '1.0.3' ],
+37 silly audit   '@rolldown/binding-linux-s390x-gnu': [ '1.0.3' ],
+37 silly audit   '@rolldown/binding-linux-x64-gnu': [ '1.0.3' ],
+37 silly audit   '@rolldown/binding-linux-x64-musl': [ '1.0.3' ],
+37 silly audit   '@rolldown/binding-openharmony-arm64': [ '1.0.3' ],
+37 silly audit   '@rolldown/binding-wasm32-wasi': [ '1.0.3' ],
+37 silly audit   '@rolldown/binding-win32-arm64-msvc': [ '1.0.3' ],
+37 silly audit   '@rolldown/binding-win32-x64-msvc': [ '1.0.3' ],
+37 silly audit   '@rolldown/pluginutils': [ '1.0.1' ],
+37 silly audit   '@tybys/wasm-util': [ '0.10.2' ],
+37 silly audit   '@vitejs/plugin-react': [ '6.0.2' ],
+37 silly audit   'detect-libc': [ '2.1.2' ],
+37 silly audit   fdir: [ '6.5.0' ],
+37 silly audit   fsevents: [ '2.3.3' ],
+37 silly audit   lightningcss: [ '1.32.0' ],
+37 silly audit   'lightningcss-android-arm64': [ '1.32.0' ],
+37 silly audit   'lightningcss-darwin-arm64': [ '1.32.0' ],
+37 silly audit   'lightningcss-darwin-x64': [ '1.32.0' ],
+37 silly audit   'lightningcss-freebsd-x64': [ '1.32.0' ],
+37 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.32.0' ],
+37 silly audit   'lightningcss-linux-arm64-gnu': [ '1.32.0' ],
+37 silly audit   'lightningcss-linux-arm64-musl': [ '1.32.0' ],
+37 silly audit   'lightningcss-linux-x64-gnu': [ '1.32.0' ],
+37 silly audit   'lightningcss-linux-x64-musl': [ '1.32.0' ],
+37 silly audit   'lightningcss-win32-arm64-msvc': [ '1.32.0' ],
+37 silly audit   'lightningcss-win32-x64-msvc': [ '1.32.0' ],
+37 silly audit   'lucide-react': [ '1.17.0' ],
+37 silly audit   nanoid: [ '3.3.12' ],
+37 silly audit   picocolors: [ '1.1.1' ],
+37 silly audit   picomatch: [ '4.0.4' ],
+37 silly audit   postcss: [ '8.5.15' ],
+37 silly audit   react: [ '19.2.7' ],
+37 silly audit   'react-dom': [ '19.2.7' ],
+37 silly audit   rolldown: [ '1.0.3' ],
+37 silly audit   scheduler: [ '0.27.0' ],
+37 silly audit   'source-map-js': [ '1.2.1' ],
+37 silly audit   tinyglobby: [ '0.2.17' ],
+37 silly audit   tslib: [ '2.8.1' ],
+37 silly audit   vite: [ '8.0.16' ],
+37 silly audit   'chart.js': [ '4.5.1' ],
+37 silly audit   'react-chartjs-2': [ '5.3.1' ],
+37 silly audit   '@kurkle/color': [ '0.3.4' ]
+37 silly audit }
+38 http cache react-chartjs-2@https://registry.npmjs.org/react-chartjs-2/-/react-chartjs-2-5.3.1.tgz 0ms (cache hit)
+39 http cache @kurkle/color@https://registry.npmjs.org/@kurkle/color/-/color-0.3.4.tgz 1ms (cache hit)
+40 http cache chart.js@https://registry.npmjs.org/chart.js/-/chart.js-4.5.1.tgz 0ms (cache hit)
+41 silly tarball no local data for react-chartjs-2@https://registry.npmjs.org/react-chartjs-2/-/react-chartjs-2-5.3.1.tgz. Extracting by manifest.
+42 silly tarball no local data for @kurkle/color@https://registry.npmjs.org/@kurkle/color/-/color-0.3.4.tgz. Extracting by manifest.
+43 silly tarball no local data for chart.js@https://registry.npmjs.org/chart.js/-/chart.js-4.5.1.tgz. Extracting by manifest.
+44 http fetch GET 200 https://registry.npmjs.org/react-chartjs-2/-/react-chartjs-2-5.3.1.tgz 75ms (cache miss)
+45 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 356ms
+46 silly audit report {}
+47 http fetch GET 200 https://registry.npmjs.org/@kurkle/color/-/color-0.3.4.tgz 389ms (cache miss)
+48 http fetch GET 200 https://registry.npmjs.org/chart.js/-/chart.js-4.5.1.tgz 1455ms (cache miss)
+49 silly ADD node_modules/@kurkle/color
+50 silly ADD node_modules/react-chartjs-2
+51 silly ADD node_modules/chart.js
+52 verbose cwd C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\frontend
+53 verbose os Windows_NT 10.0.26200
+54 verbose node v22.15.0
+55 verbose npm  v11.11.1
+56 notice
+56 notice New minor version of npm available! 11.11.1 -> 11.17.0
+56 notice Changelog: https://github.com/npm/cli/releases/tag/v11.17.0
+56 notice To update run: npm install -g npm@11.17.0
+56 notice  { force: true, [Symbol(proc-log.meta)]: true }
+57 verbose exit 0
+58 info ok

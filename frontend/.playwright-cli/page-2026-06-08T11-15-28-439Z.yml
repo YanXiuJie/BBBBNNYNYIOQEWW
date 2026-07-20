@@ -1,0 +1,21 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - paragraph [ref=e5]: Next-Gen E-Learning
+    - heading "Adaptive Math AI" [level=1] [ref=e6]
+    - paragraph [ref=e7]: Sistem pembelajaran adaptif Matematik Tahun 5 untuk diagnostik, latihan, maklum balas Bahasa Melayu dan analitik guru.
+  - generic [ref=e8]:
+    - heading "Log masuk" [level=2] [ref=e9]
+    - generic [ref=e10]:
+      - text: Username
+      - textbox "Username" [ref=e11]: amin
+    - generic [ref=e12]:
+      - text: Password
+      - textbox "Password" [ref=e13]: password123
+    - button "Log masuk" [ref=e14] [cursor=pointer]
+    - generic [ref=e15]:
+      - button "Student Amin" [ref=e16] [cursor=pointer]:
+        - img [ref=e17]
+        - text: Student Amin
+      - button "Cikgu Siti" [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+        - text: Cikgu Siti

@@ -1,0 +1,57 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_global\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.11.1
+2 info using node@v22.15.0
+3 silly config load:file:C:\Program Files\nodejs\node_global\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION\.npmrc
+5 silly config load:file:C:\Users\yan85\.npmrc
+6 silly config load:file:C:\Program Files\nodejs\node_global\etc\npmrc
+7 verbose title npm exec node -e const { chromium } = require('playwright'); console.log('playwright-ok', !!chromium);
+8 verbose argv "exec" "--yes" "--package" "playwright" "--" "node" "-e" "const { chromium } = require('playwright'); console.log('playwright-ok', !!chromium);"
+9 verbose logfile logs-max:10 dir:C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION\.npm-cache\_logs\2026-06-08T21_55_55_117Z-
+10 verbose logfile C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION\.npm-cache\_logs\2026-06-08T21_55_55_117Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 http fetch GET 200 https://registry.npmjs.org/npm 328ms
+14 http fetch GET 200 https://registry.npmjs.org/playwright 553ms (cache miss)
+15 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+16 silly idealTree buildDeps
+17 silly fetch manifest playwright@1.60.0
+18 silly packumentCache full:https://registry.npmjs.org/playwright cache-miss
+19 http fetch GET 200 https://registry.npmjs.org/playwright 495ms (cache miss)
+20 silly packumentCache full:https://registry.npmjs.org/playwright set size:undefined disposed:false
+21 silly placeDep ROOT playwright@1.60.0 OK for:  want: 1.60.0
+22 silly fetch manifest playwright-core@1.60.0
+23 silly packumentCache full:https://registry.npmjs.org/playwright-core cache-miss
+24 silly fetch manifest fsevents@2.3.2
+25 silly packumentCache full:https://registry.npmjs.org/fsevents cache-miss
+26 http fetch GET 200 https://registry.npmjs.org/fsevents 64ms (cache miss)
+27 silly packumentCache full:https://registry.npmjs.org/fsevents set size:undefined disposed:false
+28 http fetch GET 200 https://registry.npmjs.org/playwright-core 509ms (cache miss)
+29 silly packumentCache full:https://registry.npmjs.org/playwright-core set size:undefined disposed:false
+30 silly placeDep ROOT fsevents@2.3.2 OK for: playwright@1.60.0 want: 2.3.2
+31 silly placeDep ROOT playwright-core@1.60.0 OK for: playwright@1.60.0 want: 1.60.0
+32 silly reify moves {}
+33 silly audit bulk request {
+33 silly audit   playwright: [ '1.60.0' ],
+33 silly audit   fsevents: [ '2.3.2' ],
+33 silly audit   'playwright-core': [ '1.60.0' ]
+33 silly audit }
+34 http cache playwright-core@https://registry.npmjs.org/playwright-core/-/playwright-core-1.60.0.tgz 1ms (cache hit)
+35 http cache playwright@https://registry.npmjs.org/playwright/-/playwright-1.60.0.tgz 0ms (cache hit)
+36 silly tarball no local data for playwright-core@https://registry.npmjs.org/playwright-core/-/playwright-core-1.60.0.tgz. Extracting by manifest.
+37 silly tarball no local data for playwright@https://registry.npmjs.org/playwright/-/playwright-1.60.0.tgz. Extracting by manifest.
+38 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 245ms
+39 silly audit report {}
+40 http fetch GET 200 https://registry.npmjs.org/playwright/-/playwright-1.60.0.tgz 900ms (cache miss)
+41 http fetch GET 200 https://registry.npmjs.org/playwright-core/-/playwright-core-1.60.0.tgz 1194ms (cache miss)
+42 verbose cwd C:\Users\yan85\OneDrive\Documents\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION
+43 verbose os Windows_NT 10.0.26200
+44 verbose node v22.15.0
+45 verbose npm  v11.11.1
+46 notice
+46 notice New minor version of npm available! 11.11.1 -> 11.16.0
+46 notice Changelog: https://github.com/npm/cli/releases/tag/v11.16.0
+46 notice To update run: npm install -g npm@11.16.0
+46 notice  { force: true, [Symbol(proc-log.meta)]: true }
+47 verbose exit 1
+48 verbose code 1

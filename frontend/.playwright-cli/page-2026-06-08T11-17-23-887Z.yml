@@ -1,0 +1,90 @@
+- generic [ref=e387]:
+  - complementary [ref=e388]:
+    - generic [ref=e389]: Adaptive Math AI
+    - navigation [ref=e390]:
+      - button "Dashboard" [ref=e391] [cursor=pointer]:
+        - img [ref=e392]
+        - generic [ref=e395]: Dashboard
+      - button "Diagnostic Test" [ref=e396] [cursor=pointer]:
+        - img [ref=e397]
+        - generic [ref=e400]: Diagnostic Test
+      - button "Topic Selection" [ref=e401] [cursor=pointer]:
+        - img [ref=e402]
+        - generic [ref=e406]: Topic Selection
+      - button "Adaptive Practice" [ref=e407] [cursor=pointer]:
+        - img [ref=e408]
+        - generic [ref=e410]: Adaptive Practice
+      - button "Progress & Stats" [ref=e411] [cursor=pointer]:
+        - img [ref=e412]
+        - generic [ref=e414]: Progress & Stats
+      - button "Review Mistakes" [active] [ref=e415] [cursor=pointer]:
+        - img [ref=e416]
+        - generic [ref=e421]: Review Mistakes
+      - button "Profile" [ref=e422] [cursor=pointer]:
+        - img [ref=e423]
+        - generic [ref=e426]: Profile
+  - generic [ref=e427]:
+    - banner [ref=e428]:
+      - generic [ref=e429]:
+        - paragraph [ref=e430]: Student Portal
+        - heading "Matematik Tahun 5" [level=1] [ref=e431]
+      - generic [ref=e432]:
+        - generic [ref=e433]: Amin Hakim
+        - button "Log keluar" [ref=e434] [cursor=pointer]:
+          - img [ref=e435]
+    - main [ref=e438]:
+      - generic [ref=e476]:
+        - generic [ref=e477]:
+          - paragraph [ref=e478]: Review Mistakes
+          - heading "Ulang Kaji Kesalahan" [level=2] [ref=e479]
+        - generic [ref=e480]:
+          - combobox [ref=e481]:
+            - option "Sort by answered time" [selected]
+            - option "Sort by time spent"
+            - option "Sort by subtopic"
+          - combobox [ref=e482]:
+            - option "Descending" [selected]
+            - option "Ascending"
+          - combobox [ref=e483]:
+            - option "5 per page"
+            - option "10 per page" [selected]
+            - option "20 per page"
+        - generic [ref=e484]:
+          - paragraph [ref=e485]: Darab Pecahan
+          - 'heading "Darab Pecahan: Darabkan pecahan berikut: 1/2 x 2/5 = ?" [level=3] [ref=e486]'
+          - paragraph [ref=e487]:
+            - text: "Answered:"
+            - strong [ref=e488]: 8 Jun 2026, 10:50 am
+          - paragraph [ref=e489]:
+            - text: "Masa:"
+            - strong [ref=e490]: 38s
+          - paragraph [ref=e491]:
+            - text: "Jawapan saya:"
+            - strong [ref=e492]: 4/10
+          - paragraph [ref=e493]:
+            - text: "Jawapan betul:"
+            - strong [ref=e494]: 1/5
+          - paragraph [ref=e495]: Seeded practical learning record.
+          - button "Cuba Soalan Serupa" [ref=e496] [cursor=pointer]
+        - generic [ref=e497]:
+          - paragraph [ref=e498]: Darab Pecahan
+          - 'heading "Darab Pecahan: Darabkan pecahan berikut: 1/2 x 3/5 = ?" [level=3] [ref=e499]'
+          - paragraph [ref=e500]:
+            - text: "Answered:"
+            - strong [ref=e501]: 8 Jun 2026, 10:50 am
+          - paragraph [ref=e502]:
+            - text: "Masa:"
+            - strong [ref=e503]: 35s
+          - paragraph [ref=e504]:
+            - text: "Jawapan saya:"
+            - strong [ref=e505]: 4/10
+          - paragraph [ref=e506]:
+            - text: "Jawapan betul:"
+            - strong [ref=e507]: 3/10
+          - paragraph [ref=e508]: Seeded practical learning record.
+          - button "Cuba Soalan Serupa" [ref=e509] [cursor=pointer]
+        - generic [ref=e510]:
+          - generic [ref=e511]: Page 1 of 1 · 2 mistakes
+          - generic [ref=e512]:
+            - button "Previous" [disabled] [ref=e513]
+            - button "Next" [disabled] [ref=e514]

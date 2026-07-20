@@ -1,0 +1,57 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\yan85\\OneDrive - mmu.edu.my\\FYP\\FYP2 submit\\IMPLEMENTING AI-DRIVEN ADAPTATION IN DIGITAL EDUCATION Copy\\backend']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [17528] using WatchFiles
+INFO:     Started server process [13220]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+2026-06-30 08:27:36,982 [INFO] app.main: Login attempt: username=amin
+2026-06-30 08:27:37,500 [INFO] app.main: Login successful: user_id=8, role=student, username=amin
+2026-06-30 08:27:45,382 [INFO] app.main: Generating question: subtopic_id=50, difficulty=easy, type=short_answer
+2026-06-30 08:27:50,666 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 08:27:50,723 [INFO] app.main: Question generated successfully: id=881, prompt=Susun nombor berikut dari yang terkecil ke yang te...
+2026-06-30 08:27:50,746 [INFO] app.main: Generating question: subtopic_id=50, difficulty=easy, type=short_answer
+2026-06-30 08:27:54,442 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 08:27:54,465 [INFO] app.main: Question generated successfully: id=882, prompt=Susun nombor berikut dari yang terkecil ke yang te...
+2026-06-30 09:22:11,606 [INFO] app.main: Generating question: subtopic_id=52, difficulty=medium, type=short_answer
+2026-06-30 09:22:20,298 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 09:22:20,331 [INFO] app.main: Question generated successfully: id=883, prompt=Diberikan pola nombor berikut: 2, 5, 10, 17, 26, ....
+2026-06-30 09:22:20,352 [INFO] app.main: Generating question: subtopic_id=52, difficulty=medium, type=short_answer
+2026-06-30 09:22:24,974 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 09:22:25,009 [INFO] app.main: Question generated successfully: id=884, prompt=Diberikan pola nombor berikut: 3, 7, 11, 15, ... A...
+2026-06-30 09:22:34,568 [INFO] app.main: Attempt submitted: student_id=8, question_id=884
+2026-06-30 09:22:34,601 [INFO] app.main: Attempt recorded: student_id=8, is_correct=False, mastery_score=54.0
+2026-06-30 09:23:29,267 [INFO] app.main: Login attempt: username=cikgu
+2026-06-30 09:23:29,705 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-30 09:24:10,273 [INFO] app.main: Generating question: subtopic_id=91, difficulty=hard, type=short_answer
+2026-06-30 09:24:14,225 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 09:24:14,273 [INFO] app.main: Question generated successfully: id=885, prompt=Dalam sebuah kelas, nisbah murid lelaki kepada mur...
+2026-06-30 09:42:16,292 [INFO] app.main: Login attempt: username=amin
+2026-06-30 09:42:16,725 [INFO] app.main: Login successful: user_id=8, role=student, username=amin
+2026-06-30 11:03:12,398 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-30 11:03:17,026 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:03:17,048 [INFO] app.main: Question generated successfully: id=886, prompt=Tuliskan nombor bagi perkataan nombor berikut: "Li...
+2026-06-30 11:03:17,070 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-30 11:03:22,091 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:03:22,116 [INFO] app.main: Question generated successfully: id=887, prompt=Tulis nombor bagi 'tujuh ribu dua ratus tiga puluh...
+2026-06-30 11:03:40,204 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:04:35,336 [INFO] app.main: Login attempt: username=cikgu
+2026-06-30 11:04:35,770 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-30 11:05:29,931 [INFO] app.main: Generating question: subtopic_id=78, difficulty=hard, type=short_answer
+2026-06-30 11:05:33,604 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:05:33,644 [INFO] app.main: Question generated successfully: id=889, prompt=Sebuah tali sepanjang 2.5 kilometer hendak dipoton...
+2026-06-30 11:09:18,419 [INFO] app.main: Login attempt: username=cikgu
+2026-06-30 11:09:18,872 [INFO] app.main: Login successful: user_id=7, role=teacher, username=cikgu
+2026-06-30 11:09:29,398 [INFO] app.main: Login attempt: username=amin
+2026-06-30 11:09:29,849 [INFO] app.main: Login successful: user_id=8, role=student, username=amin
+2026-06-30 11:09:55,292 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-30 11:09:59,692 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:09:59,732 [INFO] app.main: Question generated successfully: id=890, prompt=Tuliskan nombor bagi "tujuh ribu tiga ratus dua pu...
+2026-06-30 11:09:59,751 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-30 11:10:04,949 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:10:04,970 [INFO] app.main: Question generated successfully: id=891, prompt=Tuliskan nombor bagi perkataan berikut: "Tiga ribu...
+2026-06-30 11:10:05,882 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-30 11:10:12,312 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:10:12,347 [INFO] app.main: Question generated successfully: id=892, prompt=Tuliskan nombor bagi bilangan berikut: Dua ribu ti...
+2026-06-30 11:10:12,367 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
+2026-06-30 11:10:17,086 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-30 11:10:17,122 [INFO] app.main: Question generated successfully: id=893, prompt=Tuliskan nombor bagi "tiga ribu lima ratus dua pul...

@@ -1,0 +1,328 @@
+- generic [ref=e22]:
+  - complementary [ref=e23]:
+    - generic [ref=e24]: Adaptive Math AI
+    - navigation [ref=e25]:
+      - button "Class Dashboard" [ref=e26] [cursor=pointer]:
+        - img [ref=e27]
+        - generic [ref=e29]: Class Dashboard
+      - button "Class Management" [ref=e30] [cursor=pointer]:
+        - img [ref=e31]
+        - generic [ref=e36]: Class Management
+      - button "Student Management" [ref=e37] [cursor=pointer]:
+        - img [ref=e38]
+        - generic [ref=e43]: Student Management
+      - button "Student Detail" [ref=e44] [cursor=pointer]:
+        - img [ref=e45]
+        - generic [ref=e53]: Student Detail
+      - button "Syllabus" [ref=e54] [cursor=pointer]:
+        - img [ref=e55]
+        - generic [ref=e57]: Syllabus
+      - button "Question Bank" [active] [ref=e58] [cursor=pointer]:
+        - img [ref=e59]
+        - generic [ref=e63]: Question Bank
+      - button "AI Generator" [ref=e64] [cursor=pointer]:
+        - img [ref=e65]
+        - generic [ref=e68]: AI Generator
+  - generic [ref=e69]:
+    - banner [ref=e70]:
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: Teacher/Admin Portal
+        - heading "Pengurusan Pembelajaran Adaptif" [level=1] [ref=e73]
+      - generic [ref=e74]:
+        - generic [ref=e75]: Cikgu Siti
+        - button "Log keluar" [ref=e76] [cursor=pointer]:
+          - img [ref=e77]
+    - main [ref=e80]:
+      - generic [ref=e167]:
+        - generic [ref=e168]:
+          - paragraph [ref=e169]: Question Bank
+          - heading "Question Bank Management" [level=2] [ref=e170]
+          - paragraph [ref=e171]: Create, edit, filter and deactivate validated questions.
+        - generic [ref=e172]:
+          - heading "Create Manual Question" [level=3] [ref=e173]
+          - generic [ref=e174]:
+            - text: Chapter
+            - combobox "Chapter" [ref=e175]:
+              - option "1. Nombor Bulat dan Operasi"
+              - option "2. Pecahan, Perpuluhan dan Peratus" [selected]
+              - option "3. Wang"
+              - option "4. Masa dan Waktu"
+              - option "5. Panjang, Jisim dan Isi Padu Cecair"
+              - option "6. Ruang"
+              - option "7. Koordinat, Nisbah dan Kadaran"
+              - option "8. Pengurusan Data"
+          - generic [ref=e176]:
+            - text: Subtopic
+            - combobox "Subtopic" [ref=e177]:
+              - option "Darab Pecahan" [selected]
+              - option "Bundarkan Perpuluhan"
+              - option "Tambah dan Tolak Perpuluhan"
+              - option "Darab Perpuluhan"
+              - option "Bahagi Perpuluhan"
+              - option "Tukar Nombor Bercampur dan Peratus"
+              - option "Selesaikan Masalah"
+          - generic [ref=e178]:
+            - text: Difficulty
+            - combobox "Difficulty" [ref=e179]:
+              - option "Easy"
+              - option "Medium" [selected]
+              - option "Hard"
+          - generic [ref=e180]:
+            - text: Question type
+            - combobox "Question type" [ref=e181]:
+              - option "Short answer" [selected]
+              - option "Multiple choice"
+          - generic [ref=e182]:
+            - text: Question
+            - textbox "Question" [ref=e183]
+          - generic [ref=e184]:
+            - text: Answer
+            - textbox "Answer" [ref=e185]
+          - generic [ref=e186]:
+            - text: Hint
+            - textbox "Hint" [ref=e187]
+          - generic [ref=e188]:
+            - text: Explanation
+            - textbox "Explanation" [ref=e189]
+          - button "Create Question" [ref=e191] [cursor=pointer]
+        - generic [ref=e192]:
+          - combobox [ref=e193]:
+            - option "All subtopics" [selected]
+            - option "Kenal dan Tulis Nombor"
+            - option "Banding dan Susun Nombor"
+            - option "Nombor Perdana"
+            - option "Pola Nombor"
+            - option "Tambah"
+            - option "Tolak"
+            - option "Darab"
+            - option "Bahagi"
+            - option "Selesaikan Masalah"
+            - option "Darab Pecahan"
+            - option "Bundarkan Perpuluhan"
+            - option "Tambah dan Tolak Perpuluhan"
+            - option "Darab Perpuluhan"
+            - option "Bahagi Perpuluhan"
+            - option "Tukar Nombor Bercampur dan Peratus"
+            - option "Selesaikan Masalah"
+            - option "Tambah Nilai Wang"
+            - option "Tolak Nilai Wang"
+            - option "Darab Nilai Wang"
+            - option "Bahagi Nilai Wang"
+            - option "Simpan dan Labur"
+            - option "Faedah Mudah dan Faedah Kompaun"
+            - option "Kredit dan Hutang"
+            - option "Selesaikan Masalah"
+            - option "Tempoh"
+            - option "Tukar Unit Masa"
+            - option "Tambah Masa"
+            - option "Tolak Masa"
+            - option "Selesaikan Masalah"
+            - option "Tukar Unit Panjang"
+            - option "Tambah Unit Panjang"
+            - option "Tolak Unit Panjang"
+            - option "Tukar Unit Gram dan Kilogram"
+            - option "Tukar Unit Mililiter dan Liter"
+            - option "Selesaikan Masalah"
+            - option "Poligon Sekata"
+            - option "Ukur Sudut Pedalaman"
+            - option "Perimeter Bentuk Gabungan"
+            - option "Luas Bentuk Gabungan"
+            - option "Isi Padu Bentuk Gabungan"
+            - option "Selesaikan Masalah"
+            - option "Jarak di antara Dua Koordinat"
+            - option "Nisbah antara Dua Kuantiti"
+            - option "Kadaran untuk Mencari Suatu Nilai"
+            - option "Selesaikan Masalah"
+            - option "Tafsir Carta Pai"
+            - option "Mod, Julat, Median dan Min"
+            - option "Selesaikan Masalah"
+          - combobox [ref=e194]:
+            - option "All difficulties" [selected]
+            - option "Easy"
+            - option "Medium"
+            - option "Hard"
+          - combobox [ref=e195]:
+            - option "All types" [selected]
+            - option "Short answer"
+            - option "Multiple choice"
+          - combobox [ref=e196]:
+            - option "Sort by created" [selected]
+            - option "Sort by difficulty"
+            - option "Sort by subtopic"
+            - option "Sort by source"
+            - option "Sort by type"
+          - combobox [ref=e197]:
+            - option "Descending" [selected]
+            - option "Ascending"
+          - combobox [ref=e198]:
+            - option "10 per page" [selected]
+            - option "20 per page"
+            - option "50 per page"
+        - table [ref=e200]:
+          - rowgroup [ref=e201]:
+            - row "Created Subtopic Question Answer Type Options Difficulty Source Action" [ref=e202]:
+              - columnheader "Created" [ref=e203]
+              - columnheader "Subtopic" [ref=e204]
+              - columnheader "Question" [ref=e205]
+              - columnheader "Answer" [ref=e206]
+              - columnheader "Type" [ref=e207]
+              - columnheader "Options" [ref=e208]
+              - columnheader "Difficulty" [ref=e209]
+              - columnheader "Source" [ref=e210]
+              - columnheader "Action" [ref=e211]
+          - rowgroup [ref=e212]:
+            - 'row "8 Jun 2026, 11:09 am Kenal dan Tulis Nombor Kenal dan Tulis Nombor: Apakah nilai digit ratus dalam nombor 35825? 800 short_answer - Easy Template Edit Disable" [ref=e213]':
+              - cell "8 Jun 2026, 11:09 am" [ref=e214]
+              - cell "Kenal dan Tulis Nombor" [ref=e215]
+              - 'cell "Kenal dan Tulis Nombor: Apakah nilai digit ratus dalam nombor 35825?" [ref=e216]'
+              - cell "800" [ref=e217]
+              - cell "short_answer" [ref=e218]:
+                - generic [ref=e219]: short_answer
+              - cell "-" [ref=e220]
+              - cell "Easy" [ref=e221]:
+                - generic [ref=e222]: Easy
+              - cell "Template" [ref=e223]:
+                - generic [ref=e224]: Template
+              - cell "Edit Disable" [ref=e225]:
+                - button "Edit" [ref=e226] [cursor=pointer]
+                - button "Disable" [ref=e227] [cursor=pointer]
+            - 'row "8 Jun 2026, 11:09 am Kenal dan Tulis Nombor Kenal dan Tulis Nombor: Apakah nilai digit ratus dalam nombor 35725? 700 short_answer - Easy Template Edit Disable" [ref=e228]':
+              - cell "8 Jun 2026, 11:09 am" [ref=e229]
+              - cell "Kenal dan Tulis Nombor" [ref=e230]
+              - 'cell "Kenal dan Tulis Nombor: Apakah nilai digit ratus dalam nombor 35725?" [ref=e231]'
+              - cell "700" [ref=e232]
+              - cell "short_answer" [ref=e233]:
+                - generic [ref=e234]: short_answer
+              - cell "-" [ref=e235]
+              - cell "Easy" [ref=e236]:
+                - generic [ref=e237]: Easy
+              - cell "Template" [ref=e238]:
+                - generic [ref=e239]: Template
+              - cell "Edit Disable" [ref=e240]:
+                - button "Edit" [ref=e241] [cursor=pointer]
+                - button "Disable" [ref=e242] [cursor=pointer]
+            - 'row "8 Jun 2026, 11:09 am Poligon Sekata Poligon Sekata: Sebuah poligon sekata mempunyai 10 sisi sama panjang. Berapakah bilangan sisinya? 10 short_answer - Hard Template Edit Disable" [ref=e243]':
+              - cell "8 Jun 2026, 11:09 am" [ref=e244]
+              - cell "Poligon Sekata" [ref=e245]
+              - 'cell "Poligon Sekata: Sebuah poligon sekata mempunyai 10 sisi sama panjang. Berapakah bilangan sisinya?" [ref=e246]'
+              - cell "10" [ref=e247]
+              - cell "short_answer" [ref=e248]:
+                - generic [ref=e249]: short_answer
+              - cell "-" [ref=e250]
+              - cell "Hard" [ref=e251]:
+                - generic [ref=e252]: Hard
+              - cell "Template" [ref=e253]:
+                - generic [ref=e254]: Template
+              - cell "Edit Disable" [ref=e255]:
+                - button "Edit" [ref=e256] [cursor=pointer]
+                - button "Disable" [ref=e257] [cursor=pointer]
+            - 'row "8 Jun 2026, 11:09 am Poligon Sekata Poligon Sekata: Sebuah poligon sekata mempunyai 8 sisi sama panjang. Berapakah bilangan sisinya? 8 short_answer - Hard Template Edit Disable" [ref=e258]':
+              - cell "8 Jun 2026, 11:09 am" [ref=e259]
+              - cell "Poligon Sekata" [ref=e260]
+              - 'cell "Poligon Sekata: Sebuah poligon sekata mempunyai 8 sisi sama panjang. Berapakah bilangan sisinya?" [ref=e261]'
+              - cell "8" [ref=e262]
+              - cell "short_answer" [ref=e263]:
+                - generic [ref=e264]: short_answer
+              - cell "-" [ref=e265]
+              - cell "Hard" [ref=e266]:
+                - generic [ref=e267]: Hard
+              - cell "Template" [ref=e268]:
+                - generic [ref=e269]: Template
+              - cell "Edit Disable" [ref=e270]:
+                - button "Edit" [ref=e271] [cursor=pointer]
+                - button "Disable" [ref=e272] [cursor=pointer]
+            - 'row "8 Jun 2026, 11:09 am Poligon Sekata Poligon Sekata: Sebuah poligon sekata mempunyai 6 sisi sama panjang. Berapakah bilangan sisinya? 6 short_answer - Hard Template Edit Disable" [ref=e273]':
+              - cell "8 Jun 2026, 11:09 am" [ref=e274]
+              - cell "Poligon Sekata" [ref=e275]
+              - 'cell "Poligon Sekata: Sebuah poligon sekata mempunyai 6 sisi sama panjang. Berapakah bilangan sisinya?" [ref=e276]'
+              - cell "6" [ref=e277]
+              - cell "short_answer" [ref=e278]:
+                - generic [ref=e279]: short_answer
+              - cell "-" [ref=e280]
+              - cell "Hard" [ref=e281]:
+                - generic [ref=e282]: Hard
+              - cell "Template" [ref=e283]:
+                - generic [ref=e284]: Template
+              - cell "Edit Disable" [ref=e285]:
+                - button "Edit" [ref=e286] [cursor=pointer]
+                - button "Disable" [ref=e287] [cursor=pointer]
+            - 'row "8 Jun 2026, 11:09 am Poligon Sekata Poligon Sekata: Sebuah poligon sekata mempunyai 5 sisi sama panjang. Berapakah bilangan sisinya? 5 short_answer - Hard Template Edit Disable" [ref=e288]':
+              - cell "8 Jun 2026, 11:09 am" [ref=e289]
+              - cell "Poligon Sekata" [ref=e290]
+              - 'cell "Poligon Sekata: Sebuah poligon sekata mempunyai 5 sisi sama panjang. Berapakah bilangan sisinya?" [ref=e291]'
+              - cell "5" [ref=e292]
+              - cell "short_answer" [ref=e293]:
+                - generic [ref=e294]: short_answer
+              - cell "-" [ref=e295]
+              - cell "Hard" [ref=e296]:
+                - generic [ref=e297]: Hard
+              - cell "Template" [ref=e298]:
+                - generic [ref=e299]: Template
+              - cell "Edit Disable" [ref=e300]:
+                - button "Edit" [ref=e301] [cursor=pointer]
+                - button "Disable" [ref=e302] [cursor=pointer]
+            - 'row "8 Jun 2026, 11:09 am Poligon Sekata Poligon Sekata: Sebuah poligon sekata mempunyai 10 sisi sama panjang. Berapakah bilangan sisinya? 10 short_answer - Hard Template Edit Disable" [ref=e303]':
+              - cell "8 Jun 2026, 11:09 am" [ref=e304]
+              - cell "Poligon Sekata" [ref=e305]
+              - 'cell "Poligon Sekata: Sebuah poligon sekata mempunyai 10 sisi sama panjang. Berapakah bilangan sisinya?" [ref=e306]'
+              - cell "10" [ref=e307]
+              - cell "short_answer" [ref=e308]:
+                - generic [ref=e309]: short_answer
+              - cell "-" [ref=e310]
+              - cell "Hard" [ref=e311]:
+                - generic [ref=e312]: Hard
+              - cell "Template" [ref=e313]:
+                - generic [ref=e314]: Template
+              - cell "Edit Disable" [ref=e315]:
+                - button "Edit" [ref=e316] [cursor=pointer]
+                - button "Disable" [ref=e317] [cursor=pointer]
+            - 'row "8 Jun 2026, 11:09 am Poligon Sekata Poligon Sekata: Sebuah poligon sekata mempunyai 8 sisi sama panjang. Berapakah bilangan sisinya? 8 short_answer - Hard Template Edit Disable" [ref=e318]':
+              - cell "8 Jun 2026, 11:09 am" [ref=e319]
+              - cell "Poligon Sekata" [ref=e320]
+              - 'cell "Poligon Sekata: Sebuah poligon sekata mempunyai 8 sisi sama panjang. Berapakah bilangan sisinya?" [ref=e321]'
+              - cell "8" [ref=e322]
+              - cell "short_answer" [ref=e323]:
+                - generic [ref=e324]: short_answer
+              - cell "-" [ref=e325]
+              - cell "Hard" [ref=e326]:
+                - generic [ref=e327]: Hard
+              - cell "Template" [ref=e328]:
+                - generic [ref=e329]: Template
+              - cell "Edit Disable" [ref=e330]:
+                - button "Edit" [ref=e331] [cursor=pointer]
+                - button "Disable" [ref=e332] [cursor=pointer]
+            - 'row "8 Jun 2026, 11:09 am Poligon Sekata Poligon Sekata: Sebuah poligon sekata mempunyai 6 sisi sama panjang. Berapakah bilangan sisinya? 6 short_answer - Hard Template Edit Disable" [ref=e333]':
+              - cell "8 Jun 2026, 11:09 am" [ref=e334]
+              - cell "Poligon Sekata" [ref=e335]
+              - 'cell "Poligon Sekata: Sebuah poligon sekata mempunyai 6 sisi sama panjang. Berapakah bilangan sisinya?" [ref=e336]'
+              - cell "6" [ref=e337]
+              - cell "short_answer" [ref=e338]:
+                - generic [ref=e339]: short_answer
+              - cell "-" [ref=e340]
+              - cell "Hard" [ref=e341]:
+                - generic [ref=e342]: Hard
+              - cell "Template" [ref=e343]:
+                - generic [ref=e344]: Template
+              - cell "Edit Disable" [ref=e345]:
+                - button "Edit" [ref=e346] [cursor=pointer]
+                - button "Disable" [ref=e347] [cursor=pointer]
+            - 'row "8 Jun 2026, 11:09 am Poligon Sekata Poligon Sekata: Sebuah poligon sekata mempunyai 5 sisi sama panjang. Berapakah bilangan sisinya? 5 short_answer - Hard Template Edit Disable" [ref=e348]':
+              - cell "8 Jun 2026, 11:09 am" [ref=e349]
+              - cell "Poligon Sekata" [ref=e350]
+              - 'cell "Poligon Sekata: Sebuah poligon sekata mempunyai 5 sisi sama panjang. Berapakah bilangan sisinya?" [ref=e351]'
+              - cell "5" [ref=e352]
+              - cell "short_answer" [ref=e353]:
+                - generic [ref=e354]: short_answer
+              - cell "-" [ref=e355]
+              - cell "Hard" [ref=e356]:
+                - generic [ref=e357]: Hard
+              - cell "Template" [ref=e358]:
+                - generic [ref=e359]: Template
+              - cell "Edit Disable" [ref=e360]:
+                - button "Edit" [ref=e361] [cursor=pointer]
+                - button "Disable" [ref=e362] [cursor=pointer]
+        - generic [ref=e363]:
+          - generic [ref=e364]: Page 1 of 6 · 59 questions
+          - generic [ref=e365]:
+            - button "Previous" [disabled] [ref=e366]
+            - button "Next" [ref=e367] [cursor=pointer]
