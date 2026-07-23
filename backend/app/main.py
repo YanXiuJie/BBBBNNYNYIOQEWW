@@ -33,6 +33,12 @@ from .services.adaptive import AttemptSignal, MasteryState, next_difficulty, ris
 from .services.adaptive_selector import select_next_question_for_session
 from .services.analytics import average
 from .services.answer_checker import is_equivalent_answer
+from .services.comprehensive_progress import (
+    apply_comprehensive_answer,
+    create_active_question,
+    dump_comprehensive_state,
+    load_comprehensive_state,
+)
 from .services.diagnostic_selector import (
     completed_diagnostic_exists,
     create_diagnostic_session,
@@ -692,11 +698,14 @@ def create_app(database_url: str | None = None, seed: bool = True) -> FastAPI:
             current_question_number=0,
             phase="diagnosis",
             weak_subtopics_json=json.dumps(weak_subtopics, ensure_ascii=False),
-            state_json=json.dumps({
-                "phase1_results": [],
-                "phase2_results": [],
-                "phase3_results": []
-            }, ensure_ascii=False)
+            state_json=dump_comprehensive_state(
+                {
+                    "phase1_results": [],
+                    "phase2_results": [],
+                    "phase3_results": [],
+                    "active_question": None,
+                }
+            )
         )
         db.add(session)
         db.commit()
@@ -737,63 +746,75 @@ def create_app(database_url: str | None = None, seed: bool = True) -> FastAPI:
                 detail="Sesi telah selesai."
             )
 
-        # Use adaptive selector to get next question
-        try:
-            selection = select_next_question_for_session(session_id, db)
-        except StopIteration:
-            db.refresh(session)
-            return {
-                "session_id": session.id,
-                "completed": True,
-                "question_number": session.current_question_number,
-                "total_questions": 15,
-            }
-        except ValueError as e:
-            raise HTTPException(
-                status_code=status.HTTP_400_BAD_REQUEST,
-                detail=str(e)
-            )
+        state = load_comprehensive_state(session.state_json)
+        active = state.get("active_question")
 
-        # Fetch question
-        question = db.get(Question, selection["question_id"])
-        if not question:
-            raise HTTPException(
-                status_code=status.HTTP_404_NOT_FOUND,
-                detail="Soalan tidak ditemui."
-            )
+        if active:
+            question = db.get(Question, active["question_id"])
+            if not question or not question.is_active:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="Soalan aktif tidak ditemui.",
+                )
+        else:
+            try:
+                selection = select_next_question_for_session(session_id, db)
+            except StopIteration:
+                db.refresh(session)
+                return {
+                    "session_id": session.id,
+                    "completed": True,
+                    "question_number": session.current_question_number,
+                    "total_questions": 15,
+                }
+            except ValueError as exc:
+                raise HTTPException(
+                    status_code=status.HTTP_400_BAD_REQUEST,
+                    detail=str(exc),
+                ) from exc
 
-        # Generate hints if not present
+            question = db.get(Question, selection["question_id"])
+            if not question:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="Soalan tidak ditemui.",
+                )
+
+            active = create_active_question(
+                question_id=question.id,
+                question_number=selection["question_number"],
+                phase=selection["phase"],
+            )
+            state["active_question"] = active
+            session.state_json = dump_comprehensive_state(state)
+
         ensure_question_hints(question, db)
-
-        # Build phase info
         phase_map = {
             "diagnosis": "Diagnostik",
             "remedial": "Pemulihan",
-            "consolidation": "Pengukuhan"
+            "consolidation": "Pengukuhan",
         }
-
-        phase_info = {
-            "phase_name": phase_map.get(session.phase, session.phase),
-            "question_number": selection["question_number"],
-            "total_questions": 15,
-            "progress_percentage": round((selection["question_number"] / 15) * 100, 1)
-        }
-
-        # Build hint config
-        hint_config = {
-            "hint_level1_ms": question.hint_ms or "",
-            "hint_level2_ms": question.hint_level2_ms or "",
-            "hint_level3_ms": question.hint_level3_ms or "",
-            "max_hints": 3
-        }
+        question_number = active["question_number"]
+        phase = active["phase"]
 
         return {
             "session_id": session.id,
-            "question_number": selection["question_number"],
-            "phase": session.phase,
-            "phase_info": phase_info,
-            "question": serialize_question_with_context(db, question),
-            "hint_config": hint_config
+            "completed": False,
+            "question_number": question_number,
+            "phase": phase,
+            "phase_info": {
+                "phase_name": phase_map.get(phase, phase),
+                "question_number": question_number,
+                "total_questions": 15,
+                "progress_percentage": round((question_number / 15) * 100, 1),
+            },
+            "question": serialize_comprehensive_question(db, question),
+            "attempt_count": active["attempt_count"],
+            "wrong_attempts": active["wrong_attempts"],
+            "revealed_hints": serialize_revealed_hints(
+                question,
+                list(active.get("revealed_hints", [])),
+            ),
         }
 
     @app.post("/student/comprehensive-practice/submit", status_code=status.HTTP_201_CREATED)
@@ -818,95 +839,155 @@ def create_app(database_url: str | None = None, seed: bool = True) -> FastAPI:
                 detail="Anda tidak mempunyai akses ke sesi ini."
             )
 
-        # Validate question
+        state = load_comprehensive_state(session.state_json)
+        active = state.get("active_question")
+        if not active:
+            raise HTTPException(
+                status_code=status.HTTP_409_CONFLICT,
+                detail="Soalan ini telah selesai atau belum dimulakan.",
+            )
+        if active["question_id"] != payload.question_id:
+            raise HTTPException(
+                status_code=status.HTTP_409_CONFLICT,
+                detail="Soalan yang dihantar bukan soalan aktif.",
+            )
+
         question = db.get(Question, payload.question_id)
         if not question or not question.is_active:
             raise HTTPException(
                 status_code=status.HTTP_404_NOT_FOUND,
-                detail="Soalan tidak ditemui."
+                detail="Soalan tidak ditemui.",
             )
 
-        # Check answer
-        is_correct = is_equivalent_answer(payload.answer_text, question.expected_answer)
+        answer_matches = is_equivalent_answer(
+            payload.answer_text,
+            question.expected_answer,
+        )
+        updated_active, transition = apply_comprehensive_answer(
+            active=active,
+            answer_text=payload.answer_text,
+            answer_is_correct=answer_matches,
+        )
+        state["active_question"] = updated_active
 
-        # Update mastery
+        if not transition["completed"]:
+            session.state_json = dump_comprehensive_state(state)
+            level = transition["revealed_hint_level"]
+            db.commit()
+            return {
+                "completed": False,
+                "outcome": "in_progress",
+                "is_correct": None,
+                "attempt_number": updated_active["attempt_count"],
+                "wrong_attempts": updated_active["wrong_attempts"],
+                "feedback_ms": "Belum tepat. Cuba lagi dengan petunjuk ini.",
+                "revealed_hint": {
+                    "level": level,
+                    "text_ms": comprehensive_hint_text(question, level),
+                },
+            }
+
+        final_is_correct = transition["is_correct"]
         subtopic = db.get(Subtopic, question.subtopic_id)
         if not subtopic:
             raise HTTPException(
                 status_code=status.HTTP_404_NOT_FOUND,
-                detail="Subtopik tidak ditemui."
+                detail="Subtopik tidak ditemui.",
             )
 
         mastery = get_or_create_mastery(db, user.id, subtopic)
-        updated = update_mastery(
-            MasteryState(mastery.score, mastery.streak_correct, mastery.streak_wrong),
-            AttemptSignal(is_correct=is_correct, difficulty=question.difficulty, time_seconds=payload.time_seconds)
+        updated_mastery = update_mastery(
+            MasteryState(
+                mastery.score,
+                mastery.streak_correct,
+                mastery.streak_wrong,
+            ),
+            AttemptSignal(
+                is_correct=final_is_correct,
+                difficulty=question.difficulty,
+                time_seconds=payload.time_seconds,
+            ),
         )
-        mastery.score = updated.score
-        mastery.streak_correct = updated.streak_correct
-        mastery.streak_wrong = updated.streak_wrong
+        mastery.score = updated_mastery.score
+        mastery.streak_correct = updated_mastery.streak_correct
+        mastery.streak_wrong = updated_mastery.streak_wrong
 
-        # Update style preference
         update_style_preference(
             student_id=user.id,
             presentation_style=question.presentation_style,
-            is_correct=is_correct,
+            is_correct=final_is_correct,
             time_seconds=payload.time_seconds,
-            db=db
+            db=db,
         )
 
-        # Record attempt
-        feedback = build_feedback_ms(is_correct, question)
-        attempt = Attempt(
-            student_id=user.id,
-            question_id=question.id,
-            chapter_id=question.chapter_id,
-            subtopic_id=question.subtopic_id,
-            answer_text=payload.answer_text,
-            is_correct=is_correct,
-            time_seconds=payload.time_seconds,
-            feedback_ms=feedback
+        outcome = transition["outcome"]
+        feedback = "Betul." if outcome == "correct" else "Salah tetapi selesai."
+        recorded_answer = (
+            payload.answer_text
+            if final_is_correct
+            else updated_active.get("first_wrong_answer") or payload.answer_text
         )
-        db.add(attempt)
+        db.add(
+            Attempt(
+                student_id=user.id,
+                question_id=question.id,
+                chapter_id=question.chapter_id,
+                subtopic_id=question.subtopic_id,
+                answer_text=recorded_answer,
+                is_correct=final_is_correct,
+                time_seconds=payload.time_seconds,
+                feedback_ms=feedback,
+            )
+        )
 
-        # Update session state
-        state = json.loads(session.state_json)
         phase_key = {
             "diagnosis": "phase1_results",
             "remedial": "phase2_results",
             "consolidation": "phase3_results",
-        }.get(session.phase)
+        }.get(updated_active["phase"])
         if not phase_key:
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
                 detail="Fasa sesi tidak sah.",
             )
-        if phase_key not in state:
-            state[phase_key] = []
 
-        state[phase_key].append({
-            "question_id": question.id,
-            "subtopic_id": question.subtopic_id,
-            "difficulty": question.difficulty,
-            "is_correct": is_correct,
-            "hints_used": payload.hints_used,
-            "time_seconds": payload.time_seconds
-        })
-        session.state_json = json.dumps(state, ensure_ascii=False)
+        hints_used = list(updated_active.get("revealed_hints", []))
+        state[phase_key].append(
+            {
+                "question_id": question.id,
+                "subtopic_id": question.subtopic_id,
+                "difficulty": question.difficulty,
+                "is_correct": final_is_correct,
+                "outcome": outcome,
+                "attempt_count": updated_active["attempt_count"],
+                "wrong_attempts": updated_active["wrong_attempts"],
+                "hints_used": hints_used,
+                "time_seconds": payload.time_seconds,
+            }
+        )
+        state["active_question"] = None
+        session.state_json = dump_comprehensive_state(state)
 
         db.commit()
         db.refresh(mastery)
 
         return {
-            "is_correct": is_correct,
+            "completed": True,
+            "outcome": outcome,
+            "is_correct": final_is_correct,
+            "attempt_number": updated_active["attempt_count"],
+            "wrong_attempts": updated_active["wrong_attempts"],
             "feedback_ms": feedback,
+            "correct_answer": question.expected_answer,
+            "explanation_ms": question.explanation_ms,
+            "hints_used": hints_used,
             "mastery_updated": {
                 "subtopic_id": subtopic.id,
                 "subtopic_title_ms": subtopic.title_ms,
                 "score": round(mastery.score, 2),
                 "streak_correct": mastery.streak_correct,
-                "streak_wrong": mastery.streak_wrong
-            }
+                "streak_wrong": mastery.streak_wrong,
+            },
         }
 
     @app.get("/student/comprehensive-practice/summary")
@@ -1681,6 +1762,43 @@ def serialize_question_with_context(db: Session, question: Question):
         "chapter": serialize_chapter(chapter) if chapter else None,
         "subtopic": serialize_subtopic(subtopic) if subtopic else None,
     }
+
+
+COMPREHENSIVE_PRIVATE_QUESTION_FIELDS = {
+    "expected_answer",
+    "explanation_ms",
+    "hint_ms",
+    "hint_level2_ms",
+    "hint_level3_ms",
+}
+
+
+def serialize_comprehensive_question(db: Session, question: Question) -> dict:
+    payload = serialize_question_with_context(db, question)
+    for field in COMPREHENSIVE_PRIVATE_QUESTION_FIELDS:
+        payload.pop(field, None)
+    return payload
+
+
+def comprehensive_hint_text(question: Question, level: str) -> str:
+    candidates = {
+        "basic": question.hint_ms,
+        "intermediate": question.hint_level2_ms,
+        "detailed": question.hint_level3_ms,
+    }
+    fallback = {
+        "basic": f"Kenal pasti operasi utama dalam soalan: {question.prompt_ms}",
+        "intermediate": f"Tulis pengiraan untuk soalan ini langkah demi langkah: {question.prompt_ms}",
+        "detailed": f"Semak semula setiap langkah dan unit yang digunakan dalam: {question.prompt_ms}",
+    }
+    return candidates.get(level) or fallback[level]
+
+
+def serialize_revealed_hints(question: Question, levels: list[str]) -> list[dict]:
+    return [
+        {"level": level, "text_ms": comprehensive_hint_text(question, level)}
+        for level in levels
+    ]
 
 
 def serialize_mastery(mastery: MasteryRecord):

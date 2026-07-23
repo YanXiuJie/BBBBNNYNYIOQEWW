@@ -96,8 +96,8 @@ class ComprehensiveSubmitRequest(BaseModel):
     session_id: int
     question_id: int
     answer_text: str = Field(min_length=1)
-    time_seconds: int
-    hints_used: list[str] = []
+    time_seconds: int = Field(ge=1, le=1800)
+    hints_used: list[str] = Field(default_factory=list)
 
 
 class ComprehensiveSubmitResponse(BaseModel):

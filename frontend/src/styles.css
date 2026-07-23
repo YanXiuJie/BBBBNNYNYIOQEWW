@@ -413,6 +413,29 @@ button {
   text-align: left;
 }
 
+.progressive-hint {
+  border-left: 3px solid var(--primary);
+  padding-left: 12px;
+}
+
+.retry-feedback {
+  margin: 0;
+  color: var(--danger);
+  font-weight: 700;
+}
+
+.answer-review {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.04);
+}
+
+.answer-review p {
+  margin: 0;
+}
+
 .option-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));

@@ -1470,3 +1470,547 @@
 2026-06-30 11:10:12,367 [INFO] app.main: Generating question: subtopic_id=49, difficulty=easy, type=short_answer
 2026-06-30 11:10:17,086 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2026-06-30 11:10:17,122 [INFO] app.main: Question generated successfully: id=893, prompt=Tuliskan nombor bagi "tiga ribu lima ratus dua pul...
+2026-07-23 12:18:41,026 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:18:41,497 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:18:41,503 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:18:41,522 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 400 Bad Request"
+2026-07-23 12:18:49,277 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:18:49,725 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:18:49,730 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:18:49,753 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 400 Bad Request"
+2026-07-23 12:18:56,427 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:18:56,863 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:18:56,876 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:18:56,892 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 400 Bad Request"
+2026-07-23 12:19:03,356 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:19:03,788 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:19:03,791 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:19:03,804 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 400 Bad Request"
+2026-07-23 12:19:10,718 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:19:11,160 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:19:11,164 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:19:11,176 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 400 Bad Request"
+2026-07-23 12:20:44,767 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:20:45,222 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:20:45,227 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:20:45,345 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:20:45,357 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:20:45,389 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:20:45,408 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:20:45,433 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:20:52,898 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:20:53,342 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:20:53,345 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:20:53,454 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:20:53,467 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:20:53,495 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:20:53,561 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:21:00,922 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:21:01,476 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:21:01,481 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:21:01,676 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:21:01,703 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:21:01,749 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:21:01,819 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:21:01,878 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:21:01,935 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:21:01,993 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:21:09,285 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:21:09,731 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:21:09,735 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:21:09,850 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:21:09,862 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:21:09,895 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:21:09,938 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:21:09,979 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:21:17,632 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:21:18,078 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:21:18,081 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:21:18,214 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:21:18,232 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:21:18,266 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:21:18,311 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:24:48,427 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:24:48,912 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:24:48,915 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:24:49,028 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:24:49,045 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:24:49,081 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:24:49,098 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:24:56,106 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:24:56,549 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:24:56,551 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:24:56,654 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:24:56,670 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:24:56,705 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:24:56,752 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:24:56,778 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:24:56,802 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:25:04,442 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:25:04,888 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:25:04,891 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:25:04,990 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:25:05,007 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:25:05,094 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:25:05,119 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:25:05,145 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:25:05,170 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:25:05,214 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:25:05,231 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 409 Conflict"
+2026-07-23 12:25:12,770 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:25:13,224 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:25:13,227 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:25:13,339 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:25:13,355 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:25:13,385 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:25:13,414 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:25:13,463 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:25:20,315 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:25:20,771 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:25:20,774 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:25:20,910 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:25:20,929 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:25:20,964 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:25:21,020 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:05,112 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:26:05,558 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:26:05,563 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:26:05,696 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:26:05,715 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:05,749 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:05,765 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:12,759 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:26:13,210 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:26:13,213 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:26:13,322 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:26:13,338 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:13,373 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:13,419 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:13,443 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:13,469 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:20,232 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:26:20,683 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:26:20,686 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:26:20,785 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:26:20,802 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:20,839 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:20,868 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:20,891 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:20,916 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:20,957 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:20,975 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 409 Conflict"
+2026-07-23 12:26:28,302 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:26:28,756 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:26:28,759 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:26:28,861 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:26:28,875 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:28,905 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:28,931 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:28,977 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:36,579 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:26:37,032 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:26:37,036 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:26:37,146 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:26:37,159 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:37,189 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:37,238 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:44,168 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:26:44,615 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:26:44,619 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:26:44,721 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:26:44,738 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:44,770 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:44,798 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:44,842 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:44,987 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/summary?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:52,262 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:26:52,712 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:26:52,715 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:26:52,976 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:26:52,990 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:53,021 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:53,072 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:53,085 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:53,116 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:53,156 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:53,170 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:53,195 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:53,237 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:53,250 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:53,274 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:53,311 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:53,323 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:53,345 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:53,385 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:53,413 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:53,442 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:53,485 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:53,497 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:53,524 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:53,566 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:53,585 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:53,613 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:53,662 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:53,679 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:53,703 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:53,741 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:53,755 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:53,780 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:53,821 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:53,837 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:53,892 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:53,938 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:53,952 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:54,008 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:54,047 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:54,064 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:54,098 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:54,149 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:54,163 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:54,217 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:54,262 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:54,277 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:26:54,305 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:54,347 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:26:54,370 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:26:54,395 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/summary?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:32:26,192 [INFO] httpx: HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-07-23 12:32:33,251 [INFO] httpx: HTTP Request: GET http://testserver/syllabus "HTTP/1.1 200 OK"
+2026-07-23 12:32:40,141 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:32:40,586 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:32:40,590 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:32:40,602 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-07-23 12:32:40,647 [INFO] httpx: HTTP Request: GET http://testserver/teacher/students "HTTP/1.1 200 OK"
+2026-07-23 12:32:40,993 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=1&page_size=100 "HTTP/1.1 200 OK"
+2026-07-23 12:32:41,309 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=2&page_size=100 "HTTP/1.1 200 OK"
+2026-07-23 12:32:41,635 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=3&page_size=100 "HTTP/1.1 200 OK"
+2026-07-23 12:32:49,282 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:32:49,730 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:32:49,733 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:32:49,771 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=1&page_size=5&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-07-23 12:32:57,048 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:32:57,500 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:32:57,504 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:33:04,269 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:33:04,716 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:33:04,720 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:33:12,523 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:33:12,973 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:33:12,976 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:33:12,987 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-07-23 12:33:18,174 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 12:33:18,206 [INFO] app.main: Question generated successfully: id=289, prompt=Hitungkan hasil darab 3/4 dengan 2/5....
+2026-07-23 12:33:18,218 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-07-23 12:33:18,226 [INFO] app.main: Attempt submitted: student_id=2, question_id=289
+2026-07-23 12:33:18,264 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-07-23 12:33:18,267 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-07-23 12:33:25,846 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:33:26,299 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:33:26,301 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:33:26,312 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-07-23 12:33:31,119 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 12:33:31,166 [INFO] app.main: Question generated successfully: id=289, prompt=Jika 2/3 daripada sebuah adunan kek digunakan dan ...
+2026-07-23 12:33:31,176 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-07-23 12:33:31,187 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-07-23 12:33:37,258 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 12:33:37,351 [INFO] app.main: Question generated successfully: id=290, prompt=Ali membeli \( \frac{2}{3} \) kilogram gula dan me...
+2026-07-23 12:33:37,360 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-07-23 12:33:37,367 [INFO] app.main: Attempt submitted: student_id=2, question_id=289
+2026-07-23 12:33:37,403 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=43.5
+2026-07-23 12:33:37,406 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-07-23 12:33:37,412 [INFO] app.main: Attempt submitted: student_id=2, question_id=290
+2026-07-23 12:33:37,442 [INFO] app.main: Attempt recorded: student_id=2, is_correct=False, mastery_score=42.0
+2026-07-23 12:33:37,445 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-07-23 12:33:37,465 [INFO] httpx: HTTP Request: GET http://testserver/student/mistakes?page=1&page_size=1&sort_by=created_at&sort_dir=desc "HTTP/1.1 200 OK"
+2026-07-23 12:33:45,163 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:33:45,607 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:33:45,609 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:33:45,621 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-07-23 12:33:48,054 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 12:33:48,091 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-07-23 12:33:48,100 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-07-23 12:33:48,107 [INFO] app.main: Attempt submitted: student_id=2, question_id=289
+2026-07-23 12:33:48,139 [INFO] app.main: Attempt recorded: student_id=2, is_correct=True, mastery_score=48.0
+2026-07-23 12:33:48,141 [INFO] httpx: HTTP Request: POST http://testserver/student/attempts "HTTP/1.1 201 Created"
+2026-07-23 12:33:48,149 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-07-23 12:33:49,799 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 12:33:49,836 [INFO] app.main: Question generated successfully: id=290, prompt=Soalan AI ujian 2 untuk Darab Pecahan....
+2026-07-23 12:33:49,844 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-07-23 12:33:57,759 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:33:58,203 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:33:58,205 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:33:58,216 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-07-23 12:33:59,830 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 12:33:59,865 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-07-23 12:33:59,875 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-07-23 12:33:59,885 [INFO] app.main: Generating question: subtopic_id=10, difficulty=easy, type=short_answer
+2026-07-23 12:34:02,321 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 12:34:02,366 [INFO] app.main: Question generated successfully: id=290, prompt=Soalan AI ujian 2 untuk Darab Pecahan....
+2026-07-23 12:34:02,374 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=10 "HTTP/1.1 200 OK"
+2026-07-23 12:34:09,695 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:34:10,142 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:34:10,144 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:34:10,166 [INFO] httpx: HTTP Request: POST http://testserver/teacher/chapters "HTTP/1.1 201 Created"
+2026-07-23 12:34:10,188 [INFO] httpx: HTTP Request: POST http://testserver/teacher/subtopics "HTTP/1.1 201 Created"
+2026-07-23 12:34:10,191 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:34:10,635 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:34:10,637 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:34:10,666 [INFO] app.main: Generating question: subtopic_id=49, difficulty=medium, type=short_answer
+2026-07-23 12:34:10,667 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 1/5); retrying
+2026-07-23 12:34:10,667 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 2/5); retrying
+2026-07-23 12:34:10,667 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 3/5); retrying
+2026-07-23 12:34:10,667 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 4/5); retrying
+2026-07-23 12:34:10,667 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 5/5); retrying
+2026-07-23 12:34:10,668 [ERROR] app.main: Failed to generate question after 5 LLM attempts and 0 duplicate checks
+2026-07-23 12:34:10,705 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=49 "HTTP/1.1 200 OK"
+2026-07-23 12:34:18,895 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:34:19,363 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:34:19,366 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:34:19,392 [INFO] httpx: HTTP Request: POST http://testserver/teacher/chapters "HTTP/1.1 201 Created"
+2026-07-23 12:34:19,422 [INFO] httpx: HTTP Request: POST http://testserver/teacher/subtopics "HTTP/1.1 201 Created"
+2026-07-23 12:34:19,463 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions "HTTP/1.1 201 Created"
+2026-07-23 12:34:19,469 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:34:19,965 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:34:19,969 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:34:20,014 [INFO] app.main: Generating question: subtopic_id=49, difficulty=medium, type=short_answer
+2026-07-23 12:34:20,015 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 1/5); retrying
+2026-07-23 12:34:20,015 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 2/5); retrying
+2026-07-23 12:34:20,015 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 3/5); retrying
+2026-07-23 12:34:20,015 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 4/5); retrying
+2026-07-23 12:34:20,016 [WARNING] app.main: Generation returned non-LLM source 'template' (attempt 5/5); retrying
+2026-07-23 12:34:20,016 [ERROR] app.main: Failed to generate question after 5 LLM attempts and 0 duplicate checks
+2026-07-23 12:34:21,790 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 12:34:21,830 [INFO] httpx: HTTP Request: GET http://testserver/student/next-question?subtopic_id=49 "HTTP/1.1 200 OK"
+2026-07-23 12:34:30,294 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:34:30,799 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:34:30,803 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:34:30,877 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/start "HTTP/1.1 201 Created"
+2026-07-23 12:34:39,591 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:34:40,114 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:34:40,119 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:34:40,137 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-07-23 12:34:40,677 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-07-23 12:34:40,695 [INFO] app.main: Login attempt: username=compready
+2026-07-23 12:34:41,211 [INFO] app.main: Login successful: user_id=7, role=student, username=compready
+2026-07-23 12:34:41,216 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:34:41,260 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:34:49,464 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:34:49,942 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:34:49,945 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:34:49,987 [INFO] httpx: HTTP Request: GET http://testserver/student/progress "HTTP/1.1 200 OK"
+2026-07-23 12:34:58,122 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:34:58,609 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:34:58,613 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:34:58,649 [INFO] httpx: HTTP Request: POST http://testserver/teacher/classes "HTTP/1.1 201 Created"
+2026-07-23 12:34:58,684 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-07-23 12:34:58,710 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/classes/3 "HTTP/1.1 200 OK"
+2026-07-23 12:35:07,214 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:35:07,699 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:35:07,703 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:35:07,716 [INFO] httpx: HTTP Request: GET http://testserver/teacher/classes "HTTP/1.1 200 OK"
+2026-07-23 12:35:08,202 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-07-23 12:35:08,714 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-07-23 12:35:08,740 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/students/7 "HTTP/1.1 200 OK"
+2026-07-23 12:35:17,127 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:35:17,609 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:35:17,613 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:35:17,631 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 404 Not Found"
+2026-07-23 12:35:25,625 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:35:26,104 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:35:26,108 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:35:26,132 [INFO] httpx: HTTP Request: POST http://testserver/teacher/chapters "HTTP/1.1 201 Created"
+2026-07-23 12:35:26,163 [INFO] httpx: HTTP Request: POST http://testserver/teacher/subtopics "HTTP/1.1 201 Created"
+2026-07-23 12:35:26,196 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/subtopics/49 "HTTP/1.1 200 OK"
+2026-07-23 12:35:26,232 [INFO] httpx: HTTP Request: DELETE http://testserver/teacher/chapters/9 "HTTP/1.1 200 OK"
+2026-07-23 12:35:34,091 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:35:34,573 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:35:34,576 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:35:34,618 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions "HTTP/1.1 201 Created"
+2026-07-23 12:35:34,976 [INFO] httpx: HTTP Request: GET http://testserver/teacher/questions?page=1&page_size=100 "HTTP/1.1 200 OK"
+2026-07-23 12:35:35,009 [INFO] httpx: HTTP Request: PUT http://testserver/teacher/questions/289 "HTTP/1.1 200 OK"
+2026-07-23 12:35:42,995 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:35:43,478 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:35:43,482 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:35:43,498 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-07-23 12:35:45,053 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 12:35:45,086 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-07-23 12:35:45,093 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-07-23 12:35:53,257 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:35:53,751 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:35:53,755 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:35:53,766 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-07-23 12:35:53,766 [WARNING] app.main: Generation used template fallback for teacher request (attempt 1/5)
+2026-07-23 12:35:55,772 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 12:35:55,801 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan template untuk Darab Pecahan....
+2026-07-23 12:35:55,810 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-07-23 12:36:03,111 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:36:03,594 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:36:03,598 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:36:03,609 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-07-23 12:36:05,248 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 12:36:05,284 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-07-23 12:36:05,292 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-07-23 12:36:14,236 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:36:14,703 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:36:14,707 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:36:14,719 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-07-23 12:36:16,383 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 12:36:16,420 [INFO] app.main: Question generated successfully: id=289, prompt=Soalan AI ujian 1 untuk Darab Pecahan....
+2026-07-23 12:36:16,432 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-07-23 12:36:16,442 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=short_answer
+2026-07-23 12:36:18,138 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 12:36:18,175 [INFO] app.main: Question generated successfully: id=290, prompt=Soalan AI ujian 2 untuk Darab Pecahan....
+2026-07-23 12:36:18,181 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-07-23 12:36:26,915 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:36:27,413 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:36:27,418 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:36:27,454 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions "HTTP/1.1 201 Created"
+2026-07-23 12:36:27,464 [INFO] app.main: Generating question: subtopic_id=10, difficulty=medium, type=multiple_choice
+2026-07-23 12:36:28,810 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 12:36:28,862 [INFO] app.main: Question generated successfully: id=290, prompt=Soalan unik selepas semakan pendua....
+2026-07-23 12:36:28,872 [INFO] httpx: HTTP Request: POST http://testserver/teacher/questions/generate "HTTP/1.1 201 Created"
+2026-07-23 12:36:37,352 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:36:37,835 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:36:37,839 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:36:37,892 [INFO] httpx: HTTP Request: GET http://testserver/teacher/analytics/classes/1 "HTTP/1.1 200 OK"
+2026-07-23 12:36:52,140 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:36:52,622 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:36:52,625 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:36:52,757 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:36:52,772 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:36:52,809 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:36:52,827 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:01,161 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:37:01,654 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:37:01,658 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:37:01,818 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:37:01,842 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:01,888 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:01,950 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:01,982 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:02,012 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:09,934 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:37:10,416 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:37:10,420 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:37:10,556 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:37:10,580 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:10,621 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:10,659 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:10,688 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:10,719 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:10,767 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:10,789 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 409 Conflict"
+2026-07-23 12:37:19,697 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:37:20,188 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:37:20,192 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:37:20,326 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:37:20,345 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:20,385 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:20,419 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:20,479 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:28,673 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:37:29,160 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:37:29,164 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:37:29,306 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:37:29,322 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:29,401 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:29,458 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:37,492 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:37:37,983 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:37:37,986 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:37:38,145 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:37:38,170 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:38,213 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:38,269 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:38,341 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:38,583 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/summary?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:46,910 [INFO] app.main: Login attempt: username=amin
+2026-07-23 12:37:47,396 [INFO] app.main: Login successful: user_id=2, role=student, username=amin
+2026-07-23 12:37:47,401 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:37:47,533 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/start "HTTP/1.1 201 Created"
+2026-07-23 12:37:47,554 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:47,596 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:47,665 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:47,684 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:47,712 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:47,759 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:47,775 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:47,801 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:47,840 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:47,853 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:47,878 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:47,924 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:47,938 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:47,965 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:48,008 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:48,042 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:48,071 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:48,119 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:48,138 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:48,168 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:48,214 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:48,233 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:48,262 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:48,307 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:48,323 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:48,350 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:48,394 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:48,411 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:48,440 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:48,488 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:48,506 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:48,583 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:48,655 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:48,676 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:48,742 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:48,789 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:48,807 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:48,853 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:48,900 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:48,915 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:48,957 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:49,004 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:49,022 [WARNING] app.services.adaptive_selector: Comprehensive practice generation returned non-LLM source 'template'; falling back to question bank
+2026-07-23 12:37:49,080 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:49,127 [INFO] httpx: HTTP Request: POST http://testserver/student/comprehensive-practice/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:49,154 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:49,179 [INFO] httpx: HTTP Request: GET http://testserver/student/comprehensive-practice/summary?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:57,864 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:37:58,343 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:37:58,347 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:37:58,861 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-07-23 12:37:58,864 [INFO] app.main: Login attempt: username=fresh_diagnostic_student
+2026-07-23 12:37:59,352 [INFO] app.main: Login successful: user_id=7, role=student, username=fresh_diagnostic_student
+2026-07-23 12:37:59,355 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:37:59,396 [INFO] httpx: HTTP Request: GET http://testserver/student/dashboard "HTTP/1.1 200 OK"
+2026-07-23 12:37:59,454 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/start "HTTP/1.1 201 Created"
+2026-07-23 12:37:59,482 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:37:59,571 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-07-23 12:37:59,611 [INFO] httpx: HTTP Request: GET http://testserver/student/dashboard "HTTP/1.1 200 OK"
+2026-07-23 12:38:07,420 [INFO] app.main: Login attempt: username=cikgu
+2026-07-23 12:38:07,897 [INFO] app.main: Login successful: user_id=1, role=teacher, username=cikgu
+2026-07-23 12:38:07,900 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:38:08,404 [INFO] httpx: HTTP Request: POST http://testserver/teacher/students "HTTP/1.1 201 Created"
+2026-07-23 12:38:08,408 [INFO] app.main: Login attempt: username=fresh_diagnostic_complete
+2026-07-23 12:38:08,891 [INFO] app.main: Login successful: user_id=7, role=student, username=fresh_diagnostic_complete
+2026-07-23 12:38:08,895 [INFO] httpx: HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-07-23 12:38:08,956 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/start "HTTP/1.1 201 Created"
+2026-07-23 12:38:08,986 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:38:09,072 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-07-23 12:38:09,097 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:38:09,171 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-07-23 12:38:09,198 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:38:09,273 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-07-23 12:38:09,299 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:38:09,375 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-07-23 12:38:09,400 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:38:09,477 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-07-23 12:38:09,506 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:38:09,596 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-07-23 12:38:09,623 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:38:09,684 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-07-23 12:38:09,708 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:38:09,769 [INFO] httpx: HTTP Request: POST http://testserver/student/diagnostic/submit "HTTP/1.1 201 Created"
+2026-07-23 12:38:09,782 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/next?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:38:09,811 [INFO] httpx: HTTP Request: GET http://testserver/student/diagnostic/summary?session_id=1 "HTTP/1.1 200 OK"
+2026-07-23 12:38:09,855 [INFO] httpx: HTTP Request: GET http://testserver/student/dashboard "HTTP/1.1 200 OK"
