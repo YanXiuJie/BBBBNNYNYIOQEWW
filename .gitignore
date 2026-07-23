@@ -5,6 +5,7 @@ backend/*.log
 backend/.pytest_cache/
 .env
 backend/.env
+.venv/
 frontend/node_modules/
 frontend/dist/
 frontend/.npm-cache/
